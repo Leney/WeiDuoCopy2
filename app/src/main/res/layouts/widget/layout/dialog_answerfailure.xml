@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:alpha="0.7"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/answer_failure_bg1_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:adjustViewBounds="true"
+        android:src="@mipmap/answer_failure_bg1" />
+
+
+    <ImageView
+        android:id="@+id/answer_failure_bg2_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/answer_failure_bg2" />
+
+    <ImageView
+        android:id="@+id/answer_failure_reduce_10_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/answer_failure_reduce_10" />
+
+    <ImageView
+        android:id="@+id/answer_failure_text_tip_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+     android:layout_marginTop="65dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/answer_failure_text_tip" />
+</FrameLayout>

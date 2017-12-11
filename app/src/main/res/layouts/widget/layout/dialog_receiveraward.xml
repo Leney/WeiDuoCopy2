@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:id="@+id/receiver_award_bg1_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/receiver_award_bg1" />
+
+    <ImageView
+        android:id="@+id/receiver_award_bg2_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@mipmap/receiver_award_bg2" />
+
+    <ImageView
+        android:id="@+id/receiver_award_bg3_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/receiver_award_bg3" />
+
+    <ImageView
+        android:id="@+id/receiver_award_bg4_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/receiver_award_bg4" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+      android:layout_marginBottom="110dp">
+        <ImageView
+            android:id="@+id/receiver_award_gold_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="7.5dp"
+            android:src="@mipmap/receiver_award_gold" />
+        <RelativeLayout
+            android:id="@+id/receiver_award_icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15.5dp"
+            android:layout_marginTop="15.5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/receiver_award_icon_bg_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/receiver_award__icon_bg1" />
+            <ImageView
+                android:id="@+id/receiver_award_icon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                 android:layout_marginLeft="2dp"
+                android:src="@mipmap/receiver_award_test_iv" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/receiver_award_crown_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/receiver_award_crown" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/receiver_award_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/receiver_award_layout_bg">
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/receiver_award_double_star_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/receiver_award_double_star" />
+    <ImageView
+        android:id="@+id/receiver_award_ribbon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="23dp"
+        android:src="@mipmap/receiver_award_ribbon" />
+
+    <ImageView
+        android:id="@+id/receiver_award_btn_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:src="@mipmap/receiver_award_btn" />
+
+</FrameLayout>

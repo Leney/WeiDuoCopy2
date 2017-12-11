@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <!--Banner轮播器-->
+    <com.youth.banner.Banner
+        android:id="@+id/fragment_find_banner"
+        android:layout_width="match_parent"
+        android:layout_height="146.7dp"
+        app:image_scale_type="center_crop"
+        app:indicator_drawable_selected="@drawable/point_bg_enable"
+        app:indicator_drawable_unselected="@drawable/point_bg_normal"
+        app:indicator_height="5dp"
+        app:indicator_margin="6dp"
+        app:indicator_width="5dp"/>
+
+    <!-- 横向滚动类别展示部分-->
+    <HorizontalScrollView
+        android:id="@+id/fragment_find_horizontal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/fragment_find_hor_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_20"
+            android:paddingTop="@dimen/space_20"/>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_10"
+        android:background="@color/gray6"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_20"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingTop="@dimen/space_13"
+        android:text="@string/recommend"
+        android:textColor="@color/text_333333"
+        android:textSize="@dimen/text_size_16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray6"/>
+</LinearLayout>

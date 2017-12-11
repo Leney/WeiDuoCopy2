@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout
+        android:id="@+id/scheme_list_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhongke.weiduo.mvp.ui.widget.recyclerview.LoadMoreRecyclerView
+            android:id="@+id/scheme_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout>
+</LinearLayout>

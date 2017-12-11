@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/plan_detail_child_child_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/space_6"
+    android:paddingEnd="@dimen/space_10"
+    android:paddingStart="@dimen/space_14"
+    android:paddingTop="@dimen/space_6">
+
+    <View
+        android:id="@+id/plan_detail_child_child_point"
+        android:layout_width="@dimen/space_8"
+        android:layout_height="@dimen/space_8"
+        android:background="@drawable/circle_gray_stroke_shape"
+        app:layout_constraintBottom_toBottomOf="@+id/plan_detail_child_child_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/plan_detail_child_child_name"/>
+
+    <TextView
+        android:id="@+id/plan_detail_child_child_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_16"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="名称"
+        android:textColor="@color/text_666666"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintLeft_toRightOf="@+id/plan_detail_child_child_point"
+        app:layout_constraintRight_toLeftOf="@+id/plan_detail_child_child_execute_name"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- 执行人-->
+    <TextView
+        android:id="@+id/plan_detail_child_child_execute_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_5"
+        android:drawablePadding="@dimen/space_5"
+        android:text="(父母)"
+        android:textColor="@color/text_666666"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintBottom_toBottomOf="@id/plan_detail_child_child_name"
+        app:layout_constraintLeft_toRightOf="@id/plan_detail_child_child_name"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/plan_detail_child_child_name"/>
+
+    <!-- 执行总天数-->
+    <TextView
+        android:id="@+id/plan_detail_child_child_execute_total_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginStart="@dimen/space_5"
+        android:drawablePadding="@dimen/space_5"
+        android:text="10天"
+        android:textColor="#3a3a3a"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintBottom_toBottomOf="@id/plan_detail_child_child_name"
+        app:layout_constraintRight_toLeftOf="@+id/plan_detail_child_child_right_img"
+        app:layout_constraintTop_toTopOf="@id/plan_detail_child_child_name"/>
+
+    <TextView
+        android:id="@+id/plan_detail_child_child_target"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_2"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="[养成好的学习习惯]"
+        android:textColor="@color/text_999999"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintLeft_toLeftOf="@id/plan_detail_child_child_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plan_detail_child_child_name"/>
+
+    <!-- 执行频率-->
+    <TextView
+        android:id="@+id/plan_detail_child_child_execute_frequency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_2"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="一天一次"
+        android:textColor="@color/text_999999"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintBottom_toBottomOf="@id/plan_detail_child_child_target"
+        app:layout_constraintRight_toLeftOf="@+id/plan_detail_child_child_right_img"
+        app:layout_constraintTop_toTopOf="@id/plan_detail_child_child_target"/>
+
+    <ImageView
+        android:id="@+id/plan_detail_child_child_right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

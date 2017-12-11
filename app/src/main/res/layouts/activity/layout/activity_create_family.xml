@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical">
+    <!-- 昵称部分-->
+    <LinearLayout
+        style="@style/activateItemLayStyle"
+        android:layout_marginTop="@dimen/space_10">
+
+        <TextView
+            style="@style/activateItemNameStyle"
+            android:text="@string/family_name"/>
+
+        <EditText
+            android:id="@+id/create_family_name_input"
+            style="@style/activateItemValueStyle"
+            android:hint="@string/family_name_input"/>
+    </LinearLayout>
+
+
+    <!-- 保存按钮-->
+    <TextView
+        android:id="@+id/create_family_create_btn"
+        style="@style/buttonStyle"
+        android:layout_marginLeft="@dimen/padding_screen"
+        android:layout_marginRight="@dimen/padding_screen"
+        android:layout_marginTop="@dimen/space_40"
+        android:background="@color/main_color"
+        android:text="@string/save"/>
+</LinearLayout>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:point="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhongke.weiduo.mvp.ui.widget.BaseTitleView
+        android:id="@+id/grow_up_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="58dp" />
+
+
+<com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout
+    android:id="@+id/grow_up_fragment_swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_below="@id/grow_up_fragment_title"
+    android:layout_height="wrap_content">
+
+    <com.zhongke.weiduo.mvp.ui.widget.view.MyScrollView
+        android:id="@+id/grow_up_fragment_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.youth.banner.Banner
+                android:id="@+id/grow_up_fragment_banner"
+                android:layout_width="0dp"
+                android:layout_height="147dp"
+                app:image_scale_type="center_crop"
+                app:indicator_drawable_selected="@drawable/point_bg_enable"
+                app:indicator_drawable_unselected="@drawable/point_bg_normal"
+                app:indicator_height="5dp"
+                app:indicator_margin="6dp"
+                app:indicator_width="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--愿望-->
+            <com.zhongke.weiduo.mvp.ui.widget.view.PointView
+                android:id="@+id/grow_up_fragment_my_wish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/grow_up_fragment_my_target"
+                app:layout_constraintTop_toBottomOf="@+id/grow_up_fragment_banner"
+                point:src="@mipmap/ic_wish"
+                point:text="愿望" />
+
+            <!--目标-->
+            <com.zhongke.weiduo.mvp.ui.widget.view.PointView
+                android:id="@+id/grow_up_fragment_my_target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/grow_up_fragment_my_wish"
+                app:layout_constraintLeft_toRightOf="@+id/grow_up_fragment_my_wish"
+                app:layout_constraintRight_toLeftOf="@+id/grow_up_fragment_my_scheme"
+                app:layout_constraintTop_toTopOf="@+id/grow_up_fragment_my_wish"
+                point:src="@mipmap/ic_target"
+                point:text="目标" />
+
+            <com.zhongke.weiduo.mvp.ui.widget.view.PointView
+                android:id="@+id/grow_up_fragment_my_scheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/grow_up_fragment_my_wish"
+                app:layout_constraintLeft_toRightOf="@+id/grow_up_fragment_my_target"
+                app:layout_constraintRight_toLeftOf="@+id/grow_up_fragment_my_plan"
+                app:layout_constraintTop_toTopOf="@+id/grow_up_fragment_my_wish"
+                app:layout_constraintVertical_bias="0.0"
+                point:src="@mipmap/ic_scheme"
+                point:text="规划" />
+
+            <com.zhongke.weiduo.mvp.ui.widget.view.PointView
+                android:id="@+id/grow_up_fragment_my_plan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/grow_up_fragment_my_wish"
+                app:layout_constraintLeft_toRightOf="@+id/grow_up_fragment_my_scheme"
+                app:layout_constraintRight_toLeftOf="@+id/grow_up_fragment_my_active"
+                app:layout_constraintTop_toTopOf="@+id/grow_up_fragment_my_wish"
+                point:src="@mipmap/ic_plan"
+                point:text="计划" />
+
+            <com.zhongke.weiduo.mvp.ui.widget.view.PointView
+                android:id="@+id/grow_up_fragment_my_active"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/grow_up_fragment_my_wish"
+                app:layout_constraintLeft_toRightOf="@+id/grow_up_fragment_my_plan"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/grow_up_fragment_my_wish"
+                point:src="@mipmap/ic_active"
+                point:text="活动日程" />
+
+            <TextView
+                android:id="@+id/grow_up_fragment_my_recommend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:background="@color/gray6"
+                android:paddingBottom="@dimen/space_9"
+                android:paddingEnd="@dimen/space_10"
+                android:paddingStart="@dimen/space_10"
+                android:paddingTop="@dimen/space_9"
+                android:text="@string/recommend_for_you"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_size_12"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/grow_up_fragment_my_wish" />
+
+            <!-- 活动推荐标题部分-->
+            <ImageView
+                android:id="@+id/grow_up_fragment_active_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_12"
+                android:src="@mipmap/ic_grow_up_left"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_my_recommend" />
+
+            <TextView
+                android:id="@+id/grow_up_fragment_active_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="@dimen/space_8"
+                android:text="@string/active_project"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/space_18"
+                app:layout_constraintBottom_toBottomOf="@id/grow_up_fragment_active_title_left"
+                app:layout_constraintLeft_toRightOf="@+id/grow_up_fragment_active_title_left"
+                app:layout_constraintRight_toRightOf="@+id/grow_up_fragment_active_title_right"
+                app:layout_constraintTop_toTopOf="@id/grow_up_fragment_active_title_left"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <ImageView
+                android:id="@+id/grow_up_fragment_active_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_10"
+                android:src="@drawable/right"
+                app:layout_constraintBottom_toBottomOf="@id/grow_up_fragment_active_title_left"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/grow_up_fragment_active_title_left" />
+
+            <!-- 活动布局部分-->
+            <LinearLayout
+                android:id="@+id/grow_up_fragment_active_lay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_12"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_active_title_left" />
+
+            <View
+                android:id="@+id/grow_up_fragment_spline_1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/gray6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_active_lay" />
+
+            <!-- 体系标题部分-->
+            <ImageView
+                android:id="@+id/grow_up_fragment_system_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_12"
+                android:src="@mipmap/ic_grow_up_left"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_spline_1" />
+
+            <TextView
+                android:id="@+id/grow_up_fragment_system_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_8"
+                android:text="@string/system_title"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/space_18"
+                app:layout_constraintBottom_toBottomOf="@id/grow_up_fragment_system_title_left"
+                app:layout_constraintLeft_toRightOf="@id/grow_up_fragment_system_title_left"
+                app:layout_constraintRight_toRightOf="@+id/grow_up_fragment_system_title_right"
+                app:layout_constraintTop_toTopOf="@id/grow_up_fragment_system_title_left" />
+
+            <ImageView
+                android:id="@+id/grow_up_fragment_system_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_10"
+                android:src="@drawable/right"
+                app:layout_constraintBottom_toBottomOf="@id/grow_up_fragment_system_title_left"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/grow_up_fragment_system_title_left" />
+
+            <!-- 体系布局部分-->
+            <LinearLayout
+                android:id="@+id/grow_up_fragment_system_lay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_6"
+                android:layout_marginStart="@dimen/space_6"
+                android:layout_marginTop="@dimen/space_12"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_system_title_left" />
+
+            <View
+                android:id="@+id/grow_up_fragment_spline_2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/gray6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_system_lay" />
+
+            <!-- 规划标题部分-->
+            <ImageView
+                android:id="@+id/grow_up_fragment_scheme_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_12"
+                android:src="@mipmap/ic_grow_up_left"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_spline_2" />
+
+            <TextView
+                android:id="@+id/grow_up_fragment_scheme_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_8"
+                android:text="@string/scheme_project"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/space_18"
+                app:layout_constraintBottom_toBottomOf="@id/grow_up_fragment_scheme_title_left"
+                app:layout_constraintLeft_toRightOf="@id/grow_up_fragment_scheme_title_left"
+                app:layout_constraintRight_toRightOf="@+id/grow_up_fragment_scheme_title_right"
+                app:layout_constraintTop_toTopOf="@id/grow_up_fragment_scheme_title_left" />
+
+            <ImageView
+                android:id="@+id/grow_up_fragment_scheme_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_10"
+                android:src="@drawable/right"
+                app:layout_constraintBottom_toBottomOf="@id/grow_up_fragment_scheme_title_left"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/grow_up_fragment_scheme_title_left" />
+
+            <!-- 规划布局部分-->
+            <LinearLayout
+                android:id="@+id/grow_up_fragment_scheme_lay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_6"
+                android:layout_marginStart="@dimen/space_6"
+                android:layout_marginTop="@dimen/space_12"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_scheme_title_left" />
+
+            <View
+                android:id="@+id/grow_up_fragment_spline_3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/gray6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_scheme_lay" />
+
+            <!-- 计划标题部分-->
+            <ImageView
+                android:id="@+id/grow_up_fragment_plan_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_12"
+                android:src="@mipmap/ic_grow_up_left"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_spline_3" />
+
+            <TextView
+                android:id="@+id/grow_up_fragment_plan_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_8"
+                android:text="@string/plan_project"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/space_18"
+                app:layout_constraintBottom_toBottomOf="@id/grow_up_fragment_plan_title_left"
+                app:layout_constraintLeft_toRightOf="@id/grow_up_fragment_plan_title_left"
+                app:layout_constraintRight_toRightOf="@+id/grow_up_fragment_plan_title_right"
+                app:layout_constraintTop_toTopOf="@id/grow_up_fragment_plan_title_left" />
+
+            <ImageView
+                android:id="@+id/grow_up_fragment_plan_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_10"
+                android:src="@drawable/right"
+                app:layout_constraintBottom_toBottomOf="@id/grow_up_fragment_plan_title_left"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/grow_up_fragment_plan_title_left" />
+
+            <!-- 计划布局部分-->
+            <LinearLayout
+                android:id="@+id/grow_up_fragment_plan_lay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_6"
+                android:layout_marginStart="@dimen/space_6"
+                android:layout_marginTop="@dimen/space_12"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/grow_up_fragment_plan_title_left" />
+        </android.support.constraint.ConstraintLayout>
+
+    </com.zhongke.weiduo.mvp.ui.widget.view.MyScrollView>
+
+</com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout>
+    <!--导航部分-->
+    <!--<RadioGroup
+
+        android:id="@+id/grow_up_main_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/space_55"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/grow_up_fragment_top_navigation"
+
+            style="@style/style_grow_up_main_btn_selector"
+            android:text="顶部" />
+
+        <RadioButton
+            android:id="@+id/grow_up_fragment_act_navigation"
+            style="@style/style_grow_up_main_btn_selector"
+            android:layout_marginTop="1dp"
+            android:text="活动" />
+
+        <RadioButton
+            android:id="@+id/grow_up_fragment_system_navigation"
+            style="@style/style_grow_up_main_btn_selector"
+            android:layout_marginTop="1dp"
+            android:text="体系" />
+
+        <RadioButton
+            android:id="@+id/grow_up_fragment_scheme_navigation"
+            style="@style/style_grow_up_main_btn_selector"
+            android:layout_marginTop="1dp"
+            android:text="规划" />
+
+        <RadioButton
+            android:id="@+id/grow_up_fragment_plan_navigation"
+            style="@style/style_grow_up_main_btn_selector"
+            android:layout_marginTop="1dp"
+            android:text="计划" />
+    </RadioGroup>-->
+
+</RelativeLayout>

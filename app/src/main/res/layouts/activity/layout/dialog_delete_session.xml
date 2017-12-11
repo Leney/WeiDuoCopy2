@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="170dp"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="28dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/delete_session_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="是否删除所选会话?"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp"
+        android:layout_marginTop="27dp" />
+
+    <CheckBox
+        android:id="@+id/delete_session_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_session_title"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@id/delete_session_title"
+        android:layout_toRightOf="@id/delete_session_check"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="11dp"
+        android:textColor="#666666"
+        android:text="删除前不再询问"/>
+
+    <TextView
+        android:id="@+id/dialog_delete_session_cancel"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black_text_color"
+        android:text="@string/cancel"
+        android:background="@drawable/shape_management_plan_text"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/dialog_delete_session_sure"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#fd4f4f"
+        android:text="删除"
+        android:layout_toRightOf="@id/dialog_delete_session_cancel"
+        android:background="@drawable/shape_management_plan_text"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

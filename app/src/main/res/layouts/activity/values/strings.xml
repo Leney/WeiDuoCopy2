@@ -1,0 +1,5 @@
+<resources>
+    <string name="device_manager">硬件管理</string>
+    <string name="add_friend">加为好友</string>
+    <string name="group_and_group_nick_name">群组/群组昵称</string>
+</resources>

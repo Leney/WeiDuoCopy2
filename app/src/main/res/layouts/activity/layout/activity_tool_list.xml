@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical">
+
+    <!-- 责任人-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_12"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:paddingTop="@dimen/space_12">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/duty_person"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/text_size_16"/>
+
+        <TextView
+            android:id="@+id/tool_list_duty_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="琳琳妈妈/设定责任人"
+            android:textColor="@color/content_name_color"
+            android:textSize="@dimen/text_size_16"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:background="@color/spline_color"/>
+
+    <!-- 用具清单显示部分-->
+    <LinearLayout
+        android:id="@+id/tool_list_item_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_10"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"/>
+
+
+    <TextView
+        android:id="@+id/tool_list_remind_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_40"
+        android:layout_marginRight="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@drawable/remind_btn_shape"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/remind"
+        android:textColor="@color/black_text_color"
+        android:textSize="@dimen/dialog_content_size"/>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="众可智能（深圳市众可智能管理有限公司）是一家致力于运用“互联网、人工智能、大数据” 等技术，通过活动“智能管理”，培养儿童“核心素养”（儿童及家长各类行为习惯与能力），让三亿家庭共享儿童快乐成长之旅的家庭教育智能管理公司。
+        我们的使命：让三亿家庭共享孩子快乐成长之旅。
+        我们的愿景：成为三亿亲子家庭最为信赖的领航员。
+        我们的价值观：成就用户、不断超越、团队合作、快乐和谐、开放进取、正直诚信。
+        我们的战略目标：创造以个人成长活动价值管理为中心的价值链生态圈。"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+</LinearLayout>

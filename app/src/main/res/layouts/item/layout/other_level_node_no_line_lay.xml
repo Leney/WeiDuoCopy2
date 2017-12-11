@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/other_level_node_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingStart="@dimen/space_40"
+        android:paddingTop="@dimen/space_10"
+        android:text="子级名称"
+        android:textColor="@color/text_666666"
+        android:textSize="@dimen/text_size_12"/>
+</LinearLayout>

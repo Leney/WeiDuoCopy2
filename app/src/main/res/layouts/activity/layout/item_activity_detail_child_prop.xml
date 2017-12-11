@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:paddingLeft="11dp">
+
+    <com.zhongke.weiduo.mvp.ui.widget.WapGridView
+        android:id="@+id/prop_WapGridView1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:numColumns="5"
+        android:columnWidth="13dp">
+    </com.zhongke.weiduo.mvp.ui.widget.WapGridView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <com.zhongke.weiduo.mvp.ui.widget.WapGridView
+            android:id="@+id/prop_WapGridView2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:numColumns="5"
+            android:columnWidth="13dp">
+        </com.zhongke.weiduo.mvp.ui.widget.WapGridView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:text="@string/remind_2"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhongke.weiduo">
+
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 播音 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- *******************************网易云视频直播************************** -->
+    <!-- 聊天室权限声明 -->
+
+
+    <!-- 访问网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 控制呼吸灯，振动器等，用于新消息提醒 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 外置存储存取权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 多媒体相关 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 直播权限声明 -->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- 允许挂载和反挂载文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许程序创建显示在其他程序之上，并且类型为TYPE_SYSTEM_ALERT的窗体 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许程序使用PowerManager WakeLocks以防止处理器休眠或者屏幕锁屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 配置一个程序用于调试 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <!-- 声明程序使用camera和自动对焦功能 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 声明程序使用OpenGL ES 2.0 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".app.ZkApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <!-- 百度地图key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="z7WGwVX9nGT5EFECXx3dYKkPjNTWrmW9" />
+
+        <activity
+            android:name=".mvp.ui.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.ui.activity.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.ui.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <!-- 奖励设置 -->
+        <activity
+            android:name=".mvp.ui.activity.ActivityRewardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 活动评论界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ActivityCommentActivity"
+            android:screenOrientation="portrait" />
+        <!-- 活动详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.EventDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mvp.ui.activity.OrganizationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.OrganizationDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.CourseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.CurriculumActivity"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name=".mvp.ui.activity.SessionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        -->
+        <activity
+            android:name=".mvp.ui.activity.SessionActivity2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.SessionLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.TakePhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.RecentMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.NewFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.DragPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" />
+        <activity
+            android:name=".video.DragVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".mvp.ui.activity.AddTeachContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.TeachContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.AddAssessmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.PrizeAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".mvp.ui.activity.MonitorEquipmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.AssessmentActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 注册界面 -->
+        <activity
+            android:name=".mvp.ui.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 创建群组界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ActivityCreateGroupChat"
+            android:screenOrientation="portrait" />
+        <!-- 好友详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.PersonalDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 激活设备界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ActivateDeviceActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 创建家庭界面 -->
+        <activity
+            android:name=".mvp.ui.activity.CreateFamilyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 添加亲友界面 -->
+        <activity
+            android:name=".mvp.ui.activity.AddMemberActivity"
+            android:screenOrientation="portrait" />
+        <!-- 群详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.GroupDataActivity"
+            android:screenOrientation="portrait" />
+        <!-- 家庭资料详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.FamilyDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+
+        <!-- 步骤详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.StepDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 活动成员参与列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ActMembersActivity"
+            android:screenOrientation="portrait" />
+        <!-- 愿望列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.DesireListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 资金筹备界面 -->
+        <activity
+            android:name=".mvp.ui.activity.MoneyPrepareActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 用具清单界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ActToolsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 二维码的扫描结果界面 -->
+        <activity
+            android:name=".mvp.ui.activity.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 观看答题界面 -->
+        <activity
+            android:name=".mvp.ui.activity.AnswerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 专家界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ExpertActivity"
+            android:screenOrientation="portrait" />
+        <!-- 专家详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ExpertDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 发现具体类别活动列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.FindClassifyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 日程界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ScheduleActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加日程界面 -->
+        <activity
+            android:name=".mvp.ui.activity.AppendScheduleActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的收藏界面 -->
+        <activity
+            android:name=".mvp.ui.activity.MyCollectionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 成长体系列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.EducationSystemActivity"
+            android:screenOrientation="portrait" />
+        <!-- 规划列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.SchemeListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 计划列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.PlanListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 规划详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.SchemeDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 计划详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.PlanDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 目标详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.TargetDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 体系详情界面 -->
+        <activity
+            android:name=".mvp.ui.activity.SystemDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 硬件管理界面 -->
+        <activity
+            android:name=".mvp.ui.activity.HardwareManagementActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置界面 -->
+        <activity
+            android:name=".mvp.ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.ActivityDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 我的主页 -->
+        <activity
+            android:name=".mvp.ui.activity.MineActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人资料 -->
+        <activity
+            android:name=".mvp.ui.activity.PersonalActivity"
+            android:screenOrientation="portrait" />
+        <!-- 活动列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.MovableListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的目标列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.MyTargetListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的规划列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.MySchemeListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的计划列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.MyPlanListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加目标，规划，计划列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.AddAimsPlanningActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们界面 -->
+        <activity
+            android:name=".mvp.ui.activity.RegardingWeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 群聊列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.GroupListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 家庭列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.FamilyListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 搜索好友家庭群聊界面 -->
+        <activity
+            android:name=".mvp.ui.activity.SearchFriendsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 申请加入群组时的群组资料界面 -->
+        <activity
+            android:name=".mvp.ui.activity.GroupIntroduceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <!-- 全屏播放视频界面 -->
+        <activity
+            android:name=".mvp.ui.activity.FullScreenPlayVideoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/TranslucentTheme" />
+
+        <!-- 发放奖品页面 -->
+        <activity
+            android:name=".mvp.ui.activity.GrantRewardActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改的奖品界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ActivityAwardActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改的评论界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ActivityCommentActivity2"
+            android:screenOrientation="portrait" />
+        <!-- 重新设置密码界面 -->
+        <activity
+            android:name=".mvp.ui.activity.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加奖品 -->
+        <activity
+            android:name=".mvp.ui.activity.AddPrizesActivity"
+            android:screenOrientation="portrait" />
+        <!-- 好友验证信息界面 -->
+        <activity
+            android:name=".mvp.ui.activity.FriendVerificationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 通过标签搜索的家庭好友列表界面 -->
+        <activity
+            android:name=".mvp.ui.activity.SearchResultByTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.HandleTokenExpiredActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"></activity>
+
+        <activity android:name=".mvp.ui.activity.DeviceBindActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".mvp.ui.activity.DeviceCodeActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!--活动流程加载html界面-->
+        <activity
+            android:name=".mvp.ui.activity.ActivityFlowActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".mvp.broadcastreceiver.HandleTokenExpiredBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.zhongke.weiduo.mvp.broadcastreceiver.HandleTokenExpiredBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- FileProvider配置访问路径，适配7.0及其以上 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_15">
+
+        <ImageView
+            android:id="@+id/or_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/or_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_toRightOf="@id/or_img"
+            android:textColor="#323232"
+            android:textSize="@dimen/text_size_16"
+            tools:text="腾讯课堂" />
+
+        <TextView
+            android:id="@+id/or_introduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/or_title"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_toRightOf="@id/or_img"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_14"
+            tools:text="腾讯课堂是腾讯推出的专业在线教育平台，聚合了优质教育机构和教师的海量课程资源。" />
+
+        <TextView
+            android:id="@+id/or_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/or_introduct"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_9"
+            android:layout_toRightOf="@id/or_img"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            tools:text="共12节课" />
+
+        <TextView
+            android:id="@+id/or_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/or_introduct"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_9"
+            android:layout_toRightOf="@id/or_count"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            tools:text="1927粉丝" />
+    </RelativeLayout>
+
+</LinearLayout>

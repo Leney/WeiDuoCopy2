@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:marquee="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f9f9f9"
+                android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<com.zhongke.weiduo.mvp.ui.widget.MarqueeView
+                android:id="@+id/system_detail_marqueeView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_48"
+                android:background="#effbfe"
+                android:gravity="center_vertical"
+                marquee:drawablePadding="@dimen/space_10"
+                marquee:speed="10"
+                marquee:textColor="#7f7f7f"
+                marquee:scrollText = "@string/introduce_text"
+                marquee:textSize="@dimen/text_size_10"/>-->
+
+            <ImageView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wugeng"/>
+
+            <TextView
+                android:id="@+id/system_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#ffffff"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:text="深圳特区体系"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/system_details_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="但是繁花似锦卡迪夫海军亏损达恢复艰苦撒旦回复可见阿萨德回复可见阿萨德会否考虑将sad恢复看见撒旦和法律框架阿萨德回复可见都是撒旦法里看见撒旦路口附近阿萨德宽松的解放立刻撒旦解放立刻撒旦解放立刻"
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:text="关联本体系的核心素养"
+                android:textColor="#333333"
+                android:textSize="14sp"/>
+
+            <!--<com.zhongke.weiduo.mvp.ui.widget.ListViewForScrollview
+                android:background="#ffffff"
+                android:id="@+id/system_details_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp" />-->
+
+            <FrameLayout
+                android:id="@+id/system_details_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:paddingStart="@dimen/space_10"
+                android:background="#ffffff"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="53.7dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="#1cbf61"
+            android:gravity="center"
+            android:text="咨询专家"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

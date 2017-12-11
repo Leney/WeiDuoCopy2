@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/main_color"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_9"
+        android:paddingTop="@dimen/space_10">
+
+        <!--<com.zhongke.weiduo.mvp.ui.widget.MyImageView-->
+            <!--android:id="@+id/image_photo"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:src="@drawable/photo" />-->
+
+        <ImageView
+            android:id="@+id/image_photo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/photo" />
+
+
+        <TextView
+            style="@style/titleStyle_main"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:text="首页" />
+
+
+        <ImageView
+            android:id="@+id/microrudder_qd_scan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/main_scan" />
+    </RelativeLayout>
+
+    <com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout
+        android:id="@+id/miccrorudder_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/microrudder_task_srcollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f2f3"
+            android:orientation="vertical">
+
+            <!-- 我的消息-->
+            <RelativeLayout
+                android:id="@+id/microrudder_message_total_layout"
+                style="@style/layoutStyle_microrudder"
+                android:background="@color/white">
+
+                <FrameLayout
+                    android:id="@+id/microrudder_message_layout"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp">
+
+                    <ImageView
+                        android:id="@+id/microrudder_message_large_iv"
+                        style="@style/imageViewStyle_microrudder"
+                        android:layout_gravity="left|bottom"
+                        android:src="@drawable/microrudder_msg" />
+
+                    <TextView
+                        android:id="@+id/microrudder_unread_message_point"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/microrudder_message_bg_shape" />
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/layout2Style_microrudder"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@+id/microrudder_message_layout"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/textStyle_microrudder"
+                            android:text="我的消息" />
+
+                        <TextView
+                            android:id="@+id/microrudder_messag_date_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="08:40"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/text_size_14" />
+                    </RelativeLayout>
+
+                    <!-- 最新消息-->
+                    <TextView
+                        android:id="@+id/microrudder_message_newest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="暂无消息"
+                        android:textColor="#999999" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 孩子任务-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/microrudder_task_total_layout"
+                    style="@style/layoutStyle_microrudder">
+
+                    <ImageView
+                        android:id="@+id/microrudder_task_large_iv"
+                        style="@style/imageViewStyle_microrudder"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/microrudder_childrentask" />
+
+                    <LinearLayout
+                        style="@style/layout2Style_microrudder"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_14"
+                        android:layout_toRightOf="@+id/microrudder_task_large_iv"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_baby_task"
+                                style="@style/textStyle_microrudder"
+                                android:layout_centerVertical="true"
+                                android:text="孩子任务" />
+
+                            <ImageView
+                                style="@style/imageViewStyle_microrudder"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/microrudder_add"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_7">
+
+                            <TextView
+                                android:id="@+id/microrudder_task_message_tv"
+                                style="@style/text2Style_microrudder"
+
+
+                                android:layout_alignParentTop="true"
+                                android:text="今天有1个任务待完成"
+                                android:textColor="#999999" />
+
+                            <TextView
+                                android:id="@+id/microrudder_children_task_toggle"
+                                style="@style/text2Style_microrudder"
+                                android:layout_alignBottom="@+id/microrudder_task_message_tv"
+                                android:layout_marginLeft="@dimen/space_10"
+                                android:layout_toRightOf="@+id/microrudder_task_message_tv"
+                                android:drawablePadding="@dimen/space_6"
+                                android:text="收起"
+                                android:textColor="#1cbfb1" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/microrudder_task_listview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:layout_marginRight="@dimen/space_8"
+                        android:background="#f0f0f0" />
+
+                    <com.zhongke.weiduo.mvp.ui.widget.ListViewForScrollview
+                        android:id="@+id/microrudder_task_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"></com.zhongke.weiduo.mvp.ui.widget.ListViewForScrollview>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/space_20"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:layout_marginRight="@dimen/space_8"
+                        android:background="#f0f0f0" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- 我的任务-->
+                <RelativeLayout
+                    android:id="@+id/microrudder_mytask_total_layout"
+                    style="@style/layoutStyle_microrudder"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/microrudder_mytask_large_iv"
+                        style="@style/imageViewStyle_microrudder"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/microrudder_mytask" />
+
+                    <LinearLayout
+                        style="@style/layout2Style_microrudder"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_14"
+                        android:layout_toRightOf="@+id/microrudder_mytask_large_iv"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/jia_zhang_renwu"
+                            style="@style/textStyle_microrudder"
+                            android:text="家长任务" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_8">
+
+                            <TextView
+                                android:id="@+id/microrudder_mytask_message_tv"
+                                style="@style/text2Style_microrudder"
+
+                                android:text="今天有3个任务待完成"
+                                android:textColor="#999999" />
+
+                            <TextView
+                                android:id="@+id/microrudder_my_task_toggle"
+                                style="@style/text2Style_microrudder"
+                                android:layout_alignBottom="@+id/microrudder_mytask_message_tv"
+                                android:layout_marginLeft="@dimen/space_10"
+
+                                android:layout_toRightOf="@+id/microrudder_mytask_message_tv"
+                                android:drawablePadding="@dimen/space_6"
+                                android:text="收起"
+                                android:textColor="#1cbfb1" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/microrudder_my_task_listview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:layout_marginRight="@dimen/space_8"
+                        android:background="#f0f0f0" />
+                    <com.zhongke.weiduo.mvp.ui.widget.ListViewForScrollview
+                        android:id="@+id/microrudder_my_task_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"></com.zhongke.weiduo.mvp.ui.widget.ListViewForScrollview>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout>
+</LinearLayout>

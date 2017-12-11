@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:marquee="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.zhongke.weiduo.mvp.ui.widget.view.MyScrollView
+        android:id="@+id/scheme_detail_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/scheme_detail_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<com.zhongke.weiduo.mvp.ui.widget.MarqueeView
+                android:id="@+id/scheme_detail_marqueeView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_48"
+                android:background="#effbfe"
+                android:gravity="center_vertical"
+                marquee:drawablePadding="@dimen/space_10"
+                marquee:scrollText="@string/introduce_text"
+                marquee:speed="10"
+                marquee:textColor="#7f7f7f"
+                marquee:textSize="@dimen/text_size_10" />-->
+
+
+            <com.shuyu.gsyvideoplayer.video.NormalGSYVideoPlayer
+                android:id="@+id/scheme_detail_player"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_200" />
+
+            <ImageView
+                android:id="@+id/scheme_detail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/scheme_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_12"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:paddingTop="@dimen/space_12"
+                android:text="尊师重教规则"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_9"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_6"
+                    android:background="@drawable/ic_lab_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/space_4"
+                    android:paddingLeft="@dimen/space_6"
+                    android:paddingRight="@dimen/space_6"
+                    android:paddingTop="@dimen/space_4"
+                    android:text="@string/plan"
+                    android:textColor="#6fb600"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/scheme_detail_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="免费"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/scheme_detail_simple_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_14"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:paddingTop="@dimen/space_14"
+                android:text="尊师重教简单描述尊师重教简单描述尊师重教简单描述尊师重教简单描述尊师重教简单描述尊师重教简单描述尊师重教简单描述尊师重教简单描述尊师重教简单描述尊师重教简单描述"
+                android:textColor="@color/text_666666"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_7"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_32"
+                android:paddingRight="@dimen/space_32">
+
+                <Button
+                    android:id="@+id/scheme_detail_ask_teacher_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_in_stroke_out_shape"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10"
+                    android:text="@string/ask_teacher"
+                    android:textColor="@color/text_333333" />
+
+                <View
+                    android:layout_width="@dimen/space_16"
+                    android:layout_height="1px" />
+
+                <Button
+                    android:id="@+id/scheme_detail_add_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_in_shape"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/divider2" />
+
+            <LinearLayout
+                android:id="@+id/scheme_detail_center_tab_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/scheme_detail_detail_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/space_16">
+
+                    <TextView
+                        android:id="@+id/scheme_detail_detail_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/space_9"
+                        android:paddingRight="@dimen/space_9"
+                        android:text="@string/detail"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:id="@+id/scheme_detail_detail_point"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="@dimen/space_2"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:background="@color/main_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scheme_detail_comment_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/space_16">
+
+                    <TextView
+                        android:id="@+id/scheme_detail_comment_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/space_9"
+                        android:paddingRight="@dimen/space_9"
+                        android:text="@string/comment"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:id="@+id/scheme_detail_comment_point"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="@dimen/space_2"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:background="@color/main_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--详情Fragment 和 评论Fragment部分-->
+            <FrameLayout
+                android:id="@+id/scheme_detail_fragment_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.zhongke.weiduo.mvp.ui.widget.view.MyScrollView>
+
+    <!-- 顶部悬浮的Tab部分-->
+    <LinearLayout
+        android:id="@+id/scheme_detail_top_tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/scheme_detail_top_detail_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_16">
+
+            <TextView
+                android:id="@+id/scheme_detail_top_detail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:text="@string/detail"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_16" />
+
+            <View
+                android:id="@+id/scheme_detail_top_detail_point"
+                android:layout_width="@dimen/space_32"
+                android:layout_height="@dimen/space_2"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/main_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scheme_detail_top_comment_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_16">
+
+            <TextView
+                android:id="@+id/scheme_detail_top_comment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:text="@string/comment"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_16" />
+
+            <View
+                android:id="@+id/scheme_detail_top_comment_point"
+                android:layout_width="@dimen/space_32"
+                android:layout_height="@dimen/space_2"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/main_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.zhongke.weiduo.mvp.ui.widget.ModuleMessageLayout
+        android:id="@+id/scheme_detail_manage_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginEnd="@dimen/space_10" />
+</FrameLayout>

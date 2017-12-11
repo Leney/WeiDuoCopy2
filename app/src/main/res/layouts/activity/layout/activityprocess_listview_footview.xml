@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="9.3dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="9.3dp">
+
+    <TextView
+        android:id="@+id/listview_footview_evaluation_tv"
+        style="@style/text1Style_activity_process"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/activityprocess_evaluation_tv_shape"
+        android:text="评价"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/listview_footview_participate_tv"
+        style="@style/text1Style_activity_process"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/activityprocess_participate_tv_shape"
+        android:text="加入活动"
+        android:textColor="@color/white" />
+</LinearLayout>

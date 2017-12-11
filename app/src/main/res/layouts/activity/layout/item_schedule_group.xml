@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/space_8"
+    android:paddingBottom="@dimen/space_8"
+    android:layout_width="match_parent"
+    android:background="@color/member_add_bg"
+    android:layout_height="30dp">
+
+    <TextView
+        android:id="@+id/schedule_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="9月"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:id="@+id/schedule_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22日"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+
+
+    <TextView
+        android:id="@+id/schedule_week_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星期六"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:id="@+id/schedule_tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:text="（今天）"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/email"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

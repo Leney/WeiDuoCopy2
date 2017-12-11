@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp">
+
+    <TextView
+        android:id="@+id/exit_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/exit_group_title"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:id="@+id/dialog_exit_group_cancel"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black_text_color"
+        android:text="@string/cancel"
+        android:background="@drawable/shape_management_plan_text"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/dialog_exit_group_sure"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#fd4f4f"
+        android:text="@string/sure"
+        android:layout_toRightOf="@id/dialog_exit_group_cancel"
+        android:background="@drawable/shape_management_plan_text"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

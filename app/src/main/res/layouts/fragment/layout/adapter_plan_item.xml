@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_10">
+
+    <ImageView
+        android:id="@+id/iv_plan_photo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo" />
+
+    <!--点赞-->
+    <TextView
+        android:id="@+id/tv_plan_thumbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_10"
+        android:drawablePadding="@dimen/space_5"
+        android:drawableStart="@drawable/ic_like"
+        android:gravity="center_vertical"
+        android:text="93人点赞"
+        android:textColor="#999999"
+        android:textSize="@dimen/text_size_10"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_plan_photo"
+        app:layout_constraintLeft_toRightOf="@+id/iv_plan_photo" />
+
+    <!--使用人数-->
+    <TextView
+        android:id="@+id/tv_plan_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:drawablePadding="@dimen/space_5"
+        android:drawableStart="@mipmap/ic_use"
+        android:gravity="center_vertical"
+        android:text="169人使用"
+        android:textColor="#999999"
+        android:textSize="@dimen/text_size_10"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_plan_photo"
+        app:layout_constraintLeft_toRightOf="@+id/tv_plan_thumbs" />
+
+    <!--描述-->
+    <TextView
+        android:id="@+id/tv_plan_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginStart="@dimen/space_10"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="深圳经济特区，在国家教育的基础上，结合自身诚实的特点，制定了培养适应城市现代化，国际化，信息化的人才。"
+        android:textColor="#666666"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintBottom_toTopOf="@id/tv_plan_thumbs"
+        app:layout_constraintLeft_toRightOf="@+id/iv_plan_photo"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_plan_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="小学的基础在一年级小学的基础在一年级小学的基础在一年级"
+        android:textColor="#323232"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_plan_photo"
+        app:layout_constraintRight_toLeftOf="@+id/tv_plan_lab" />
+
+    <TextView
+        android:id="@+id/tv_plan_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_6"
+        android:background="@drawable/ic_lab_bg"
+        android:gravity="center"
+        android:text="@string/plan"
+        android:textColor="#6fb600"
+        android:textSize="@dimen/text_size_10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_plan_name"
+        app:layout_constraintLeft_toRightOf="@id/tv_plan_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_plan_name" />
+
+    <TextView
+        android:id="@+id/tv_plan_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="免费"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

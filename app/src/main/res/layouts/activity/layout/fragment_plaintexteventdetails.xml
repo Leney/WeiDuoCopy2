@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+<LinearLayout
+    android:id="@+id/event_details_tip_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/event_details_problem_tv"
+        style="@style/text2Style_event_details"
+        android:layout_marginTop="@dimen/space_10"
+        android:drawableLeft="@drawable/eventdetail_problem"
+        android:text="宝贝自身原因，未完成活动" />
+
+    <TextView
+        android:id="@+id/event_details_line_tv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/event_details_problem_tv"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/event_details_tip_tv"
+        style="@style/text2Style_event_details"
+        android:drawableLeft="@drawable/eventdetail_suggestion"
+        android:layout_below="@+id/event_details_line_tv"
+        android:text="必做活动类型，需要尽快重新安排" />
+    <TextView
+        android:id="@+id/event_details_line_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@+id/event_details_problem_tv"
+        android:background="#eeeeee" />
+     <RelativeLayout
+         android:id="@+id/event_details_delay_time_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/event_details_delay_time_tip_tv"
+             style="@style/text2Style_event_details"
+             android:drawableLeft="@drawable/eventdetail_suggestion"
+             android:layout_toLeftOf="@+id/event_details_delay_time__tv"
+             android:text="必做活动类型，需要尽快重新安排" />
+         <TextView
+             android:id="@+id/event_details_delay_time__tv"
+             style="@style/text2Style_event_details"
+             android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+             android:textSize="12sp"
+             android:textColor="#999999"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="2017-5-12 14:30" />
+     </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+    <com.zhongke.weiduo.mvp.ui.widget.ActivityIntroductionTextView
+        android:id="@+id/plaintexteventdetail_activityintroductiontextview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/event_details_tip_layout"
+        android:layout_height="wrap_content">
+
+    </com.zhongke.weiduo.mvp.ui.widget.ActivityIntroductionTextView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_9"
+        android:layout_below="@+id/plaintexteventdetail_activityintroductiontextview"
+        android:paddingLeft="@dimen/space_40"
+        android:paddingRight="@dimen/space_40"
+        android:paddingTop="@dimen/space_9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/event_detials_btn_bg_shape"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="重新定制"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

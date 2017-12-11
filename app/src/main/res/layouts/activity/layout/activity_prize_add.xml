@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49.7dp"
+                android:background="#effbfe">
+
+                <TextView
+                    android:id="@+id/tv_glod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49.7dp"
+                    android:layout_marginLeft="35.3dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/gold_residue"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_glod_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49.7dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_glod"
+                    android:gravity="center_vertical"
+                    android:text="49"
+                    android:textColor="#ef5e52" />
+
+                <TextView
+                    android:id="@+id/tv_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49.7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_glod_value"
+                    android:gravity="center_vertical"
+                    android:text="@string/integral_residue"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_integral_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49.7dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_integral"
+                    android:gravity="center_vertical"
+                    android:text="23"
+                    android:textColor="#ef5e52" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="49.7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_integral_value"
+                    android:gravity="center_vertical"
+                    android:text="@string/quick_recharge"
+                    android:textColor="#4bc87c"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0.3dp"
+                android:background="#ffffff"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/reward_object"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/reward_personnel"
+                    android:paddingRight="8dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#cccccc"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/ic_prize"
+                    layout="@layout/prize_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/continue_add"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f9f9f9">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#1cbf61"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

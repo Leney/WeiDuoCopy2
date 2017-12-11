@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <!-- 电话号码输入部分-->
+    <LinearLayout
+        style="@style/editLayStyle"
+        android:layout_marginLeft="@dimen/padding_screen"
+        android:layout_marginRight="@dimen/padding_screen"
+        android:layout_marginTop="@dimen/space_40">
+
+        <ImageView
+            style="@style/editImgStyle"
+            android:src="@drawable/icon_phone"/>
+
+        <View
+            style="@style/editSplineStyle"/>
+
+        <EditText
+            android:id="@+id/login_phone_input"
+            style="@style/editStyle"
+            android:hint="@string/input_phone"
+            android:maxLength="11"/>
+    </LinearLayout>
+
+    <!-- 密码输入部分-->
+    <LinearLayout
+        style="@style/editLayStyle"
+        android:layout_marginLeft="@dimen/padding_screen"
+        android:layout_marginRight="@dimen/padding_screen"
+        android:layout_marginTop="@dimen/space_20">
+
+        <ImageView
+            style="@style/editImgStyle"
+            android:src="@drawable/icon_pwd"/>
+
+        <View
+            style="@style/editSplineStyle"/>
+
+        <EditText
+            android:id="@+id/login_pwd_input"
+            style="@style/editStyle"
+            android:hint="@string/input_new_pwd"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <!-- 登录按钮-->
+    <TextView
+        android:id="@+id/login_login_btn"
+        style="@style/buttonStyle"
+        android:layout_marginLeft="@dimen/padding_screen"
+        android:layout_marginRight="@dimen/padding_screen"
+        android:layout_marginTop="@dimen/space_40"
+        android:text="@string/login"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_screen"
+        android:layout_marginRight="@dimen/padding_screen"
+        android:layout_marginTop="@dimen/space_40"
+        android:orientation="horizontal">
+        <!-- 新用户注册按钮-->
+        <TextView
+            android:id="@+id/login_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/new_register"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/content_size"/>
+        <!-- 忘记密码-->
+        <TextView
+            android:id="@+id/login_forget_pwd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/forget_pwd"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/content_size"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <!--其他登录方式-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:background="@color/edit_lay_bg"
+        android:gravity="center"
+        android:text="@string/other_login_type"
+        android:textColor="@color/black_text_color"
+        android:textSize="@dimen/content_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_30"
+        android:paddingTop="@dimen/space_30">
+
+        <ImageView
+            android:id="@+id/login_qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_qq"/>
+
+        <View
+            android:layout_width="@dimen/space_60"
+            android:layout_height="1dp"/>
+
+        <ImageView
+            android:id="@+id/login_chat_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_chat"/>
+    </LinearLayout>
+</LinearLayout>

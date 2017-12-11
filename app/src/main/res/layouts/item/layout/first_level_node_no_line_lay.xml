@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/first_level_node_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space_14"
+        android:paddingBottom="@dimen/space_5"
+        android:paddingTop="@dimen/space_15"
+        android:text="名称"
+        android:textColor="@color/text_666666"
+        android:textSize="@dimen/text_size_14"/>
+
+</android.support.constraint.ConstraintLayout>

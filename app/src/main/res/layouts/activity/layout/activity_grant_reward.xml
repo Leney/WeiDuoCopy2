@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1">
+
+    <View
+        android:id="@+id/bg_jiangpin"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="奖品"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_333333"/>
+    
+    <View
+        android:id="@+id/bg_level_reward"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        app:layout_constraintTop_toBottomOf="@id/bg_jiangpin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/gray_text_color"
+        android:text="五星奖励"
+        app:layout_constraintTop_toTopOf="@id/bg_level_reward"
+        app:layout_constraintBottom_toBottomOf="@id/bg_level_reward"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"/>
+    
+    <View
+        android:id="@+id/bg_3"
+        android:layout_width="0dp"
+        android:layout_height="127dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_level_reward"/>
+
+    <ImageView
+        android:id="@+id/grant_reward_thing_iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/bg_3"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="@id/bg_3"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/grant_reward_gold"/>
+
+    <ImageView
+        android:id="@+id/grant_reward_thing_iv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/bg_3"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toRightOf="@id/grant_reward_thing_iv1"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/grant_reward_integral"/>
+
+    <ImageView
+        android:id="@+id/grant_reward_thing_iv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/bg_3"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toRightOf="@id/grant_reward_thing_iv2"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/grant_reward_robbot"/>
+
+    <ImageView
+        android:id="@+id/grant_reward_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/bg_3"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toRightOf="@id/grant_reward_thing_iv3"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/grant_reward_add"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/spline_color2"
+        app:layout_constraintTop_toBottomOf="@id/bg_3"/>
+
+    <View
+        android:id="@+id/bg_4"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_3"
+        android:background="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/grant_reward_rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:button="@null"
+        android:drawableLeft="@drawable/selector_schedule_type"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="@id/bg_4"
+        app:layout_constraintLeft_toLeftOf="@id/bg_4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="去参加刘小小同学的生日聚会, 并为她购买生日礼物"
+        app:layout_constraintLeft_toRightOf="@id/grant_reward_rb1"
+        app:layout_constraintTop_toTopOf="@id/bg_4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

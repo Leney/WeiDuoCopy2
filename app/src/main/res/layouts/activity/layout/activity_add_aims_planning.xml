@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/hardware"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="名称:" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入名称"
+        android:paddingLeft="10dp"
+        android:textColorHint="#ccc"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/hardware_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <!--<TextView
+        android:id="@+id/tv3"
+        style="@style/hardware"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="事项:"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入事项"
+        android:paddingLeft="10dp"
+        android:textColorHint="#ccc"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintLeft_toRightOf="@+id/tv3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv3" />-->
+
+    <TextView
+        android:id="@+id/tv_execute"
+        style="@style/hardware"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="执行人:"
+        app:layout_constraintTop_toBottomOf="@id/tv2"/>
+
+    <TextView
+        android:id="@+id/tv_execute_people_name"
+        style="@style/hardware"
+        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="孩子"
+        app:layout_constraintLeft_toRightOf="@id/tv_execute"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv2"/>
+
+    <ImageView
+        android:id="@+id/aims_down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/activity_add_aims_down_arrow"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toTopOf="@id/tv_execute_people_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_execute_people_name"
+        app:layout_constraintRight_toRightOf="@id/tv_execute_people_name"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/hardware_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_execute" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/hardware"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="事项说明:"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <EditText
+        android:id="@+id/infos_input"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#f5f5f5"
+        android:hint="请输入说明"
+        android:paddingLeft="10dp"
+        android:textColorHint="#ccc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/commit_btn"
+        android:layout_width="280dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:background="#1cbf61"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infos_input" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_200">
+
+                <ImageView
+                    android:id="@+id/family_detail_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dialog_bg" />
+
+                <ImageView
+                    android:id="@+id/family_detail_back_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_25"
+                    android:src="@drawable/back_img" />
+
+                <TextView
+                    android:id="@+id/family_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="琳琳的家庭"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_24" />
+            </FrameLayout>
+
+            <!-- 标签 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space_12"
+                android:paddingRight="@dimen/space_12"
+                android:paddingTop="@dimen/space_11">
+
+                <ImageView
+                    android:layout_width="@dimen/space_16"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:src="@drawable/ic_lab" />
+
+                <com.zhongke.weiduo.mvp.ui.widget.taglibiry.FlowTagLayout
+                    android:id="@+id/family_detail_labs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <!-- 地址 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_11"
+                android:paddingLeft="@dimen/space_12"
+                android:paddingRight="@dimen/space_12"
+                android:paddingTop="@dimen/space_11">
+
+                <ImageView
+                    android:layout_width="@dimen/space_16"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/family_detail_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="深圳市宝安区西乡"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="@dimen/dialog_title_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <!-- 标签 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space_12"
+                android:paddingRight="@dimen/space_12"
+                android:paddingTop="@dimen/space_11">
+
+                <ImageView
+                    android:layout_width="@dimen/space_16"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:src="@drawable/ic_member" />
+
+                <com.zhongke.weiduo.mvp.ui.widget.taglibiry.FlowTagLayout
+                    android:id="@+id/family_detail_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="家规家训："
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/house_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="严治家，敬长辈，明事理，守法律，知荣耻，晨健体，不欺人，守信义。"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/family_detail_add_btn_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_55"
+        android:background="@color/edit_lay_bg"
+        android:paddingLeft="@dimen/space_40"
+        android:paddingRight="@dimen/space_40">
+
+        <TextView
+            android:id="@+id/family_detail_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_36"
+            android:layout_gravity="center"
+            android:background="@drawable/activate_btn_shape"
+            android:gravity="center"
+            android:text="@string/add_family_to_friend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </FrameLayout>
+
+</LinearLayout>

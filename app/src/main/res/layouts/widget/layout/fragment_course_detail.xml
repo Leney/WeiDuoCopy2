@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d1d2d3"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_16">
+
+            <TextView
+                android:id="@+id/course_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:text="课程名称"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_size_16"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9">
+
+                <TextView
+                    android:id="@+id/course_detail_good_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="98%好评"
+                    android:textColor="@color/text_999999"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/course_detail_sign_up_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_20"
+                    android:text="999人已报名"
+                    android:textColor="@color/text_999999"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/course_detail_play_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_20"
+                    android:text="999次播放"
+                    android:textColor="@color/text_999999"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_16"
+                android:background="@color/gray6"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:paddingTop="@dimen/space_16"
+                android:text="@string/course_info"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/course_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_15"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:paddingTop="@dimen/space_16"
+                android:text="课程信息详情介绍"
+                android:textColor="@color/text_666666"
+                android:textSize="@dimen/text_size_14"/>
+
+            <!-- 图片显示区域-->
+            <LinearLayout
+                android:id="@+id/course_detail_img_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d1d2d3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_54"
+        android:orientation="horizontal">
+        <!--讲师介绍-->
+        <TextView
+            android:id="@+id/course_detail_teacher_introduce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f9f9f9"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_9"
+            android:paddingRight="@dimen/space_9"
+            android:paddingTop="@dimen/space_16"
+            android:text="@string/teacher_info"
+            android:textColor="@color/text_333333"
+            android:textSize="@dimen/text_size_16"/>
+        <!--加入课程-->
+        <TextView
+            android:id="@+id/course_detail_add_course"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_9"
+            android:paddingRight="@dimen/space_9"
+            android:paddingTop="@dimen/space_16"
+            android:text="@string/add_course"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"/>
+    </LinearLayout>
+</LinearLayout>

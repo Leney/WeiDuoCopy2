@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/movable_refresh_layout"
+        android:layout_height="match_parent">
+        <com.zhongke.weiduo.mvp.ui.widget.recyclerview.LoadMoreRecyclerView
+            android:id="@+id/movable_recycler_view"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.zhongke.weiduo.mvp.ui.widget.recyclerview.LoadMoreRecyclerView>
+
+    </com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout>
+
+</LinearLayout>

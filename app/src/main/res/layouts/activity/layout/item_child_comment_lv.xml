@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_9">
+
+    <ImageView
+        android:id="@+id/scheme_comment_adapter_icon"
+        android:layout_width="@dimen/space_40"
+        android:layout_height="@dimen/space_40"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/scheme_comment_adapter_top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_above="@+id/scheme_comment_adapter_time">
+
+                <TextView
+                    android:id="@+id/scheme_comment_adapter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_2"
+                    android:gravity="center_vertical"
+                    android:text="刘教主"
+                    android:textColor="@color/text_333333"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <LinearLayout
+                    android:id="@+id/scheme_comment_adapter_level_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_10"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/scheme_comment_adapter_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:text="2017.5.21 17:04"
+                android:textColor="@color/text_999999"
+                android:textSize="@dimen/text_size_12"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/scheme_comment_adapter_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scheme_comment_adapter_top_lay"
+            android:layout_marginStart="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center_vertical"
+            android:text="具体评论详情具体评论详情具体评论详情具体评论详情具体评论详情具体评论详情具体评论详情具体评论详情"
+            android:textColor="@color/text_666666"
+            android:textSize="@dimen/text_size_14"/>
+    </RelativeLayout>
+</LinearLayout>

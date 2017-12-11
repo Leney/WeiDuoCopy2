@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/text2Style_activity_process"
+        android:text="完成" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2" />
+    <TextView
+        android:id="@+id/activityprocess_listview_item_reward_tv"
+        style="@style/text3Style_activity_process"
+        android:drawableLeft="@drawable/activityprocess_green_bg_shape"
+
+        android:layout_marginRight="@dimen/space_10"
+        android:paddingBottom="@dimen/space_17"
+        android:paddingTop="@dimen/space_17"
+        android:drawableRight="@drawable/right"
+        android:textColor="#333333" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text1style_activityresult"
+        android:text="本次活动结果展示" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_20"
+        android:paddingRight="@dimen/space_10"
+        android:paddingTop="@dimen/space_10">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/activityresult_item_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activityresult_item_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_9"
+                android:text="文件名1" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_9"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:paddingTop="@dimen/space_9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_input_bg_shape"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_8">
+
+            <ImageView
+                android:id="@+id/add_family_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"/>
+
+            <EditText
+                android:id="@+id/add_family_search_input"
+                style="@style/editStyle"
+                android:hint="@string/family_name_or_code"
+                android:paddingLeft="@dimen/space_8"
+                android:paddingRight="@dimen/space_8"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_10"
+        android:text="@string/hot_classify"
+        android:textSize="@dimen/dialog_content_size"/>
+
+    <LinearLayout
+        android:id="@+id/add_family_classify_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_20"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_20">
+
+        <!-- 分类1-->
+        <!--<LinearLayout
+            android:id="@+id/add_family_classify_name_lay_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_family_classify_name_top_1"
+                android:layout_width="@dimen/space_44"
+                android:layout_height="@dimen/space_44"
+                android:background="@drawable/circle_blue_bg_shape"
+                android:gravity="center"
+                android:text="技"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"/>
+
+            <TextView
+                android:id="@+id/add_family_classify_name_bottom_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:text="技能类"
+                android:textColor="@color/black_text_color"/>
+        </LinearLayout>
+
+        &lt;!&ndash; 分类2&ndash;&gt;
+        <LinearLayout
+            android:id="@+id/add_family_classify_name_lay_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_family_classify_name_top_2"
+                android:layout_width="@dimen/space_44"
+                android:layout_height="@dimen/space_44"
+                android:background="@drawable/circle_yellow_bg_shape"
+                android:gravity="center"
+                android:text="技"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"/>
+
+            <TextView
+                android:id="@+id/add_family_classify_name_bottom_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:text="技能类"
+                android:textColor="@color/black_text_color"/>
+        </LinearLayout>
+
+        &lt;!&ndash; 分类3&ndash;&gt;
+        <LinearLayout
+            android:id="@+id/add_family_classify_name_lay_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_family_classify_name_top_3"
+                android:layout_width="@dimen/space_44"
+                android:layout_height="@dimen/space_44"
+                android:background="@drawable/circle_green_bg_shape"
+                android:gravity="center"
+                android:text="技"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"/>
+
+            <TextView
+                android:id="@+id/add_family_classify_name_bottom_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:text="技能类"
+                android:textColor="@color/black_text_color"/>
+        </LinearLayout>
+
+        &lt;!&ndash; 分类4&ndash;&gt;
+        <LinearLayout
+            android:id="@+id/add_family_classify_name_lay_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_family_classify_name_top_4"
+                android:layout_width="@dimen/space_44"
+                android:layout_height="@dimen/space_44"
+                android:background="@drawable/circle_red_bg_shape"
+                android:gravity="center"
+                android:text="技"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"/>
+
+            <TextView
+                android:id="@+id/add_family_classify_name_bottom_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:text="技能类"
+                android:textColor="@color/black_text_color"/>
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_10"
+        android:text="@string/nearby_family"
+        android:textSize="@dimen/dialog_content_size"/>
+</LinearLayout>

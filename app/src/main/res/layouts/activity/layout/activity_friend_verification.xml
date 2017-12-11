@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"> .
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_90"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/gray_text_color"
+            android:text="@string/you_need_send"
+            android:layout_marginTop="10dp"/>
+        
+        <EditText
+            android:id="@+id/verification_mine_name"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="7dp"
+            android:background="@null"
+            android:hint="@string/i_am"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_90"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_999999"
+            android:text="@string/set_note_tip"/>
+            
+        <EditText
+            android:id="@+id/verification_note_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_42"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="7dp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

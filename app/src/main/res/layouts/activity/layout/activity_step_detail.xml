@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_bg"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- 教学内容-->
+        <TextView
+            android:id="@+id/step_detail_teach_content_group"
+            style="@style/stepGroupStyle"
+            android:text="@string/teach_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_height"
+            android:background="@color/spline_color"/>
+
+        <LinearLayout
+            android:id="@+id/step_detail_teach_content_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/space_10"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_10"
+            android:paddingStart="@dimen/space_16"/>
+
+        <!-- 注意事项-->
+        <TextView
+            android:id="@+id/step_detail_notes_content_group"
+            style="@style/stepTextItemStyle"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="@string/notes"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_height"
+            android:background="@color/spline_color"/>
+
+        <TextView
+            android:id="@+id/step_detail_notes_content"
+            style="@style/stepTextItemStyle"
+            android:text="1.注意事项具体内容......."/>
+
+        <!-- 步骤内容-->
+        <TextView
+            android:id="@+id/step_detail_step_content_group"
+            style="@style/stepTextItemStyle"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="@string/step_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_height"
+            android:background="@color/spline_color"/>
+
+        <TextView
+            android:id="@+id/step_detail_step_content"
+            style="@style/stepTextItemStyle"
+            android:text="1.步骤具体内容......."/>
+
+        <!-- 提示与交互-->
+        <TextView
+            android:id="@+id/step_detail_prompt_mutually_group"
+            style="@style/stepGroupStyle"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="@string/prompt_mutually"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_height"
+            android:background="@color/spline_color"/>
+
+        <LinearLayout
+            android:id="@+id/step_detail_prompt_mutually_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/space_10"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_10"
+            android:paddingStart="@dimen/space_16"/>
+
+        <!-- 监控与记录-->
+        <TextView
+            android:id="@+id/step_detail_monitoring_record_group"
+            style="@style/stepGroupStyle"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="@string/monitoring_record"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_height"
+            android:background="@color/spline_color"/>
+
+        <LinearLayout
+            android:id="@+id/step_detail_monitoring_record_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/space_10"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_10"
+            android:paddingStart="@dimen/space_16"/>
+
+        <!-- 考核要素-->
+        <TextView
+            android:id="@+id/step_detail_assess_tips_group"
+            style="@style/stepGroupStyle"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="@string/assess_tips"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_height"
+            android:background="@color/spline_color"/>
+
+        <LinearLayout
+            android:id="@+id/step_detail_assess_tips_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/space_10"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_10"
+            android:paddingStart="@dimen/space_16"/>
+
+        <!-- 奖励与惩罚-->
+        <TextView
+            android:id="@+id/step_detail_award_punishment_group"
+            style="@style/stepTextItemStyle"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="@string/award_punishment"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_height"
+            android:background="@color/spline_color"/>
+
+        <LinearLayout
+            android:id="@+id/step_detail_award_punishment_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/space_10"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_10"
+            android:paddingStart="@dimen/space_16"/>
+    </LinearLayout>
+</ScrollView>

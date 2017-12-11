@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/hardware_line"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_setting_modify_password_constraintlayout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/hardware"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="修改登录密码"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:src="@drawable/right"
+            app:layout_constraintBottom_toBottomOf="@+id/tv2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv2" />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/hardware_line"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_setting_modify_password_constraintlayout" />
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/hardware"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="消息免打扰"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <com.zhongke.weiduo.mvp.ui.widget.view.SwitchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/hardware_line"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tv6"
+        style="@style/hardware"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="清除缓存"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <TextView
+        style="@style/text2style_activityresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18.92MB"
+        app:layout_constraintBottom_toBottomOf="@+id/iv1"
+        app:layout_constraintRight_toLeftOf="@+id/iv1"
+        app:layout_constraintTop_toTopOf="@+id/iv1" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:src="@drawable/right"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv6" />
+
+    <TextView
+        android:id="@+id/tv7"
+        style="@style/hardware_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <TextView
+        android:id="@+id/tv8"
+        style="@style/hardware"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="检查更新"
+        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:src="@drawable/right"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv8" />
+
+    <TextView
+        android:id="@+id/tv9"
+        style="@style/hardware_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <TextView
+        style="@style/text2style_activityresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前版本3.6.0"
+        app:layout_constraintBottom_toBottomOf="@+id/iv2"
+        app:layout_constraintRight_toLeftOf="@+id/iv2"
+        app:layout_constraintTop_toTopOf="@+id/iv2" />
+
+    <TextView
+        android:id="@+id/tv10"
+        style="@style/hardware_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_setting_consumer_phone_layout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv10">
+
+        <TextView
+            android:id="@+id/tv11"
+            style="@style/hardware"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="客服电话"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:src="@drawable/right"
+            app:layout_constraintBottom_toBottomOf="@+id/tv11"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv11" />
+
+        <TextView
+            style="@style/text2style_activityresult"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="0755-23250692"
+            app:layout_constraintBottom_toBottomOf="@+id/iv3"
+            app:layout_constraintRight_toLeftOf="@+id/iv3"
+            app:layout_constraintTop_toTopOf="@+id/iv3" />
+
+    </android.support.constraint.ConstraintLayout>
+    
+    <TextView
+        android:id="@+id/tv12"
+        style="@style/hardware_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_setting_consumer_phone_layout" />
+    
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_setting_about_us_layout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv12">
+
+        <TextView
+            android:id="@+id/tv13"
+            style="@style/hardware"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="关于我们"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:src="@drawable/right"
+            app:layout_constraintBottom_toBottomOf="@+id/tv13"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv13" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv14"
+        style="@style/hardware_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_setting_about_us_layout" />
+
+    <TextView
+        android:id="@+id/setting_again_login_tv"
+        android:layout_width="280dp"
+        android:layout_height="36.3dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff4a4a"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv14" />
+</android.support.constraint.ConstraintLayout>

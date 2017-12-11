@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/space_15">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/wugeng"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[直播]秒破小学应用题\n向错题要分数"
+        android:textColor="#323232"
+        android:textSize="@dimen/text_size_14"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="直播课"
+        android:textColor="#999999"
+        android:textSize="@dimen/text_size_12"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="¥ 1500"
+        android:textColor="#ff4a4a"
+        android:textSize="@dimen/text_size_16"/>
+
+</LinearLayout>

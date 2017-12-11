@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/padding_screen"
+              android:paddingRight="@dimen/padding_screen">
+<!--
+    &lt;!&ndash; 机器码或邀请码输入部分&ndash;&gt;
+    <LinearLayout
+        style="@style/editLayStyle"
+        android:layout_marginTop="@dimen/space_40">
+
+        <EditText
+            android:id="@+id/register_device_code_input"
+            style="@style/editStyle"
+            android:hint="@string/input_device_code"/>
+
+        <View
+            style="@style/editSplineStyle"/>
+
+        <ImageView
+            android:id="@+id/register_scan_qdcode_img"
+            style="@style/editImgStyle"
+            android:src="@drawable/icon_scan"/>
+    </LinearLayout>-->
+
+    <!-- 电话号码输入部分-->
+    <LinearLayout
+        style="@style/editLayStyle"
+        android:layout_marginTop="@dimen/space_20">
+
+        <ImageView
+            style="@style/editImgStyle"
+            android:src="@drawable/icon_phone"/>
+
+        <View
+            style="@style/editSplineStyle"/>
+
+        <EditText
+            android:id="@+id/register_phone_input"
+            style="@style/editStyle"
+            android:hint="@string/input_phone"
+            android:inputType="phone"
+            android:maxLength="11"/>
+    </LinearLayout>
+
+    <!-- 短信验证码输入部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/editLayStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <ImageView
+                style="@style/editImgStyle"
+                android:src="@drawable/icon_msg"/>
+
+            <View
+                style="@style/editSplineStyle"/>
+
+            <EditText
+                android:id="@+id/register_msg_code_input"
+                style="@style/editStyle"
+                android:hint="@string/input_code"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/space_10"
+            android:layout_height="@dimen/space_5"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.CountDownTextView
+            android:id="@+id/register_count_down_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/count_down_bg"
+            android:gravity="center"
+            android:text="@string/get_msg_code"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/content_size"/>
+    </LinearLayout>
+
+    <!-- 新密码输入部分-->
+    <LinearLayout
+        style="@style/editLayStyle"
+        android:layout_marginTop="@dimen/space_20">
+
+        <ImageView
+            style="@style/editImgStyle"
+            android:src="@drawable/icon_pwd"/>
+
+        <View
+            style="@style/editSplineStyle"/>
+
+        <EditText
+            android:id="@+id/register_pwd_input"
+            style="@style/editStyle"
+            android:hint="@string/input_new_pwd"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <!-- 注册按钮-->
+    <TextView
+        android:id="@+id/register_register_btn"
+        style="@style/buttonStyle"
+        android:layout_marginTop="@dimen/space_40"
+        android:text="@string/register"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <!-- 隐私条款-->
+    <TextView
+        android:id="@+id/register_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="@dimen/space_5"
+        android:text="@string/register_des"
+        android:textSize="@dimen/text_size_12"/>
+</LinearLayout>

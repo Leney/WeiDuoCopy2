@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/space_20"
+    android:paddingLeft="@dimen/space_10"
+    android:paddingBottom="@dimen/space_10"
+    android:paddingRight="@dimen/space_15"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mvp.ui.activity.ActivityCommentActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10">
+
+        <TextView style="@style/text2style_activityresult"
+            android:text="观察能力："/>
+        <com.zhongke.weiduo.mvp.ui.widget.wheelview.KeRatingBarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:starFill="@drawable/star_iv1"
+            app:starEmpty="@drawable/start_iv2"
+            app:starCount="5"
+            android:layout_marginLeft="@dimen/space_25" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10">
+
+        <TextView style="@style/text2style_activityresult"
+            android:text="注  意  力："/>
+        <com.zhongke.weiduo.mvp.ui.widget.wheelview.KeRatingBarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:starFill="@drawable/star_iv1"
+            app:starEmpty="@drawable/start_iv2"
+            app:starCount="5"
+            android:layout_marginLeft="@dimen/space_25" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10">
+
+        <TextView style="@style/text2style_activityresult"
+            android:text="身体机能："/>
+        <com.zhongke.weiduo.mvp.ui.widget.wheelview.KeRatingBarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:starFill="@drawable/star_iv1"
+            app:starEmpty="@drawable/start_iv2"
+            app:starCount="5"
+            android:layout_marginLeft="@dimen/space_25" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView style="@style/text2style_activityresult"
+            android:text="思维逻辑："/>
+        <com.zhongke.weiduo.mvp.ui.widget.wheelview.KeRatingBarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:starFill="@drawable/star_iv1"
+            app:starEmpty="@drawable/start_iv2"
+            app:starCount="5"
+            android:layout_marginLeft="@dimen/space_25" />
+
+    </LinearLayout>
+
+</LinearLayout>

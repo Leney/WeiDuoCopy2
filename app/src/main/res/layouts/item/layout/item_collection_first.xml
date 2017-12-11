@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/first_img"
+        android:src="@drawable/collection_food"
+        android:layout_width="100dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/first_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_text_color"
+        android:layout_toRightOf="@id/first_img"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/first_title"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/first_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text_color"
+        android:layout_below="@id/first_title"
+        android:layout_marginTop="34dp"
+        android:layout_toRightOf="@id/first_img"
+        android:layout_marginLeft="10dp"
+        android:text="@string/first_author"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:id="@+id/first_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text_color"
+        android:layout_toRightOf="@+id/first_author"
+        android:layout_below="@+id/first_title"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/first_time"
+        android:textSize="10sp"
+        />
+
+
+
+</RelativeLayout>

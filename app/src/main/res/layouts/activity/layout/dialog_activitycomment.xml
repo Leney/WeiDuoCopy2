@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text1style_activity_evaluation"
+                android:text="价值匹配:" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                style="@style/customRatingbarStyle"
+                android:rating="3"
+                android:numStars="5"
+                android:layout_marginLeft="@dimen/space_25"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_9"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text1style_activity_evaluation"
+                android:text="活动体验:" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                style="@style/customRatingbarStyle"
+                android:rating="3"
+                android:numStars="5"
+                android:layout_marginLeft="@dimen/space_25"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/space_2"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_9">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_activitycomment_bg_shape"
+            android:hint="请输入140字以内评论"
+            android:maxLength="140"
+            android:padding="@dimen/space_10"
+            android:textColor="#cccccc"
+            android:textColorHint="#cccccc"
+            android:textSize="@dimen/space_14" />
+
+        <TextView
+            android:id="@+id/activitycomment_commit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="@drawable/activityprocess_btn_bg_shape"
+            android:text="评论"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

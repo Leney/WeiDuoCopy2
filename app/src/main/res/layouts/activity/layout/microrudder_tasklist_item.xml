@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.zhongke.weiduo.mvp.ui.widget.view.DotLineView
+        android:id="@+id/tasklist_item_dotlineview"
+        android:layout_width="@dimen/space_71"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/tasklist_item_bg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="9.6dp"
+        android:background="@drawable/microrudder_task_bg1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tasklist_item_title_tv"
+            style="@style/text1Style_tasklist"
+            android:ellipsize="end"
+            android:text="连哈山爬山 [约3h]" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:paddingLeft="@dimen/space_14">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/tasklist_item_rigyh_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_40"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tasklist_item_project_tv"
+                    style="@style/text2Style_tasklist"
+                    android:text="需要陪护"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tasklist_item_pass_tv"
+                    style="@style/text2Style_tasklist"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:text="达标"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/tasklist_item_rigyh_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tasklist_item_able_tv"
+                    style="@style/text2Style_tasklist"
+                    android:text="培养运动能力\观察能力"
+                    android:textSize="@dimen/text_size_14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tasklist_item_name_tv"
+                        style="@style/text2Style_tasklist"
+                        android:text="李玲玲"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tasklist_item_address_tv"
+                        style="@style/text2Style_tasklist"
+                        android:layout_marginLeft="@dimen/space_16"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="福田莲花山公园"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/get_on" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_30"
+            android:layout_marginTop="18.6dp"
+            android:paddingLeft="@dimen/space_10">
+
+            <RelativeLayout
+                android:id="@+id/tasklist_item_imagelist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tasklist_item_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tasklist_item_imagelist"
+                android:layout_marginLeft="@dimen/space_6"
+                android:layout_toRightOf="@+id/tasklist_item_imagelist"
+                android:text="共一个人助阵" />
+
+            <com.zhongke.weiduo.mvp.ui.widget.layout.ShrinkMenuLayout
+                android:layout_width="74dp"
+                android:layout_height="76dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp">
+
+            </com.zhongke.weiduo.mvp.ui.widget.layout.ShrinkMenuLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

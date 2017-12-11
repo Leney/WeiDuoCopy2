@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/search_family_and_group_result_adapter_lay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/space_8"
+              android:paddingLeft="@dimen/space_10"
+              android:paddingRight="@dimen/space_10"
+              android:paddingTop="@dimen/space_16">
+
+    <ImageView
+        android:id="@+id/search_family_and_group_result_adapter_icon"
+        android:layout_width="@dimen/space_36"
+        android:layout_height="@dimen/space_36"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/search_family_and_group_result_adapter_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_weight="1"
+        android:text="小红的家庭"
+        android:textColor="@color/black_text_color"
+        android:textSize="@dimen/text_size_16"/>
+</LinearLayout>

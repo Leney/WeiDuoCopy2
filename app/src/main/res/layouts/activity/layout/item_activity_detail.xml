@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingRight="9.7dp"
+    android:paddingLeft="9.7dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_activity_detail_title_tv"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:text="活动流程"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/item_activity_detail_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

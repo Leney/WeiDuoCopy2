@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text1style_activityresult"
+        android:text="本次活动综合评价" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+ >
+
+<include layout="@layout/common_comment_ratingbar_layout">
+
+</include>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_6"
+            android:text="你是一个很有个性的小姑娘，性格开朗又独立，有个人呢思想，做事踏实，聪明机智，学习成绩优秀，希望在学校上能积极举手，大胆发表个人意见，课堂练习完成得又快又好，老师希望你能积极地融入集体，快乐地在学校里生活。"
+            android:textColor="#666666"
+            android:layout_marginBottom="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:textSize="@dimen/space_14" />
+    </LinearLayout>
+</LinearLayout>

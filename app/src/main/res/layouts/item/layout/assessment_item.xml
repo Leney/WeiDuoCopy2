@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/tv_assessment_name"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:paddingLeft="10.3dp"
+            android:gravity="center_vertical"
+            android:layout_height="48dp" />
+        <RelativeLayout
+            android:layout_toRightOf="@+id/tv_assessment_name"
+            android:id="@+id/rl"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:id="@+id/tv_assessment_value"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:singleLine="true"
+                android:text="@string/please_select"
+                android:gravity="center_vertical|right"
+                android:layout_toLeftOf="@+id/image_view1"/>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/image_view1"
+                android:layout_width="7.7dp"
+                android:layout_marginRight="15.3dp"
+                android:layout_height="13.7dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_right"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/image_view2"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:src="@drawable/delete_2"
+            android:layout_width="16.7dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="15.3dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

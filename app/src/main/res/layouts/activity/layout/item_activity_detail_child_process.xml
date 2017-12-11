@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        android:text="1.列点说明,简洁易懂."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        android:layout_marginTop="15dp"
+        android:text="2阅读舒服,版面干净."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        android:layout_marginTop="15dp"
+        android:text="3.文字简洁,说出重点."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black_text_color"
+        android:text="4详细及明确,让任何人对自己的工作项目一目了然."/>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:gravity="center"
+        android:lines="1"
+        android:text="提示"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/dialog_title_size"/>
+
+    <FrameLayout
+        android:id="@+id/dialog_center_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/space_5"
+            android:text="提示文本内容"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/dialog_content_size"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_button_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height">
+
+        <TextView
+            android:id="@+id/dialog_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/cancel"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/dialog_content_size"/>
+
+        <View
+            android:id="@+id/dialog_btn_split"
+            android:layout_width="@dimen/split_line_height"
+            android:layout_height="match_parent"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:id="@+id/dialog_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/sure"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/dialog_content_size"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:background="@color/divider"/>
+
+</LinearLayout>

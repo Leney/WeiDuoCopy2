@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="@dimen/space_10">
+
+    <ImageView
+        android:id="@+id/iv_system_photo"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_80"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_system_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国教育体系"
+            android:textColor="@color/text_333333"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_system_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="深圳经济特区，在国家教育的基础上，结合自身诚实的特点，制定了培养适应城市现代化，国际化，信息化的人才。"
+            android:textColor="@color/text_666666"
+            android:textSize="@dimen/text_size_12"/>
+    </LinearLayout>
+</LinearLayout>

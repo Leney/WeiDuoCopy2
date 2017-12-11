@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <View
+        style="@style/Line"/>
+
+    <com.zhongke.weiduo.mvp.ui.widget.MyGridView
+        android:id="@+id/gridview_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginTop="@dimen/space_20"
+        android:horizontalSpacing="8dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"></com.zhongke.weiduo.mvp.ui.widget.MyGridView>
+
+</LinearLayout>

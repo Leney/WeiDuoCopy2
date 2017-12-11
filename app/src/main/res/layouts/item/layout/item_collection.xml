@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/content_img"
+        android:layout_width="match_parent"
+        android:src="@drawable/collection_santa"
+        android:layout_height="160dp" />
+
+    <TextView
+        android:id="@+id/collection_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginTop="10dp"
+        android:text="圣诞接"/>
+
+    <TextView
+        android:id="@+id/issue_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="1天前"
+        android:textColor="#999999"
+        />
+</LinearLayout>

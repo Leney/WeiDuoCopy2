@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhongke.weiduo.mvp.ui.widget.view.SlidingButtonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recent_list_content_layout"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/recent_list_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <FrameLayout
+                android:id="@+id/recent_list_item_icon_lay"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="@dimen/space_16"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_11"
+                android:layout_centerVertical="true">
+
+                <!--头像-->
+                <ImageView
+                    android:id="@+id/recent_list_item_icon"
+                    android:layout_width="@dimen/space_48"
+                    android:layout_height="@dimen/space_48"
+                    android:layout_gravity="left|bottom"
+                    android:src="@mipmap/default_image"/>
+
+                <!--未读消息数-->
+                <TextView
+                    android:id="@+id/recent_list_item_num"
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_gravity="right"
+                    android:background="@drawable/circle_red_in_white_out_bg_shape"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12"/>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_toEndOf="@+id/recent_list_item_icon_lay">
+
+                <TextView
+                    android:id="@+id/recent_list_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_2"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="琳琳"
+                    android:textColor="@color/text_333333"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/recent_list_item_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="[图片]"
+                    android:textColor="@color/text_999999"
+                    android:textSize="@dimen/text_size_14"
+                    android:layout_below="@id/recent_list_item_name"/>
+
+                <TextView
+                    android:id="@+id/recent_list_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_10"
+                    android:text="12:40"
+                    android:textColor="@color/text_999999"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:layout_toRightOf="@id/recent_list_item_lay"
+            android:background="#ff0000">
+
+            <ImageView
+                android:id="@+id/recent_delete_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/delete_3" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.zhongke.weiduo.mvp.ui.widget.view.SlidingButtonView>

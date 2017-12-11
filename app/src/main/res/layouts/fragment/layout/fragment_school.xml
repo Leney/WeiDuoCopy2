@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/titleStyle_main"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/main_color"
+        android:gravity="center|bottom"
+        android:paddingBottom="5dp"
+        android:text="@string/tab2" />
+
+    <com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout
+        android:id="@+id/movable_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhongke.weiduo.mvp.ui.widget.recyclerview.LoadMoreRecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+
+        </com.zhongke.weiduo.mvp.ui.widget.recyclerview.LoadMoreRecyclerView>
+
+    </com.zhongke.weiduo.mvp.ui.widget.swiperefreshlayout.ScrollChildSwipeRefreshLayout>
+</LinearLayout>

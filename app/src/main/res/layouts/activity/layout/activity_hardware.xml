@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:openxu="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/hardware"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/table_lamp"
+            android:drawablePadding="6dp"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="台灯"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.SwitchView
+            android:id="@+id/switch_table_lamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv1"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/hardware_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"/>
+
+        <!-- 黄灯-->
+        <TextView
+            android:id="@+id/hardware_yellow_light_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="黄灯"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"/>
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/hardware_less"
+            app:layout_constraintBottom_toBottomOf="@id/hardware_yellow_light_txt"
+            app:layout_constraintLeft_toRightOf="@id/hardware_yellow_light_txt"
+            app:layout_constraintTop_toTopOf="@id/hardware_yellow_light_txt"/>
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/hardware_add"
+            app:layout_constraintBottom_toBottomOf="@+id/iv1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv1"/>
+
+        <SeekBar
+            android:id="@+id/sb"
+            style="@style/jrt_seekbar_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:max="1000"
+            app:layout_constraintBottom_toBottomOf="@+id/iv1"
+            app:layout_constraintLeft_toRightOf="@+id/iv1"
+            app:layout_constraintRight_toLeftOf="@+id/iv2"
+            app:layout_constraintTop_toTopOf="@+id/iv1"/>
+
+
+        <!-- 白灯-->
+        <TextView
+            android:id="@+id/hardware_white_light_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="白灯"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hardware_yellow_light_txt"/>
+
+        <ImageView
+            android:id="@+id/iv1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/hardware_less"
+            app:layout_constraintBottom_toBottomOf="@id/hardware_white_light_txt"
+            app:layout_constraintLeft_toRightOf="@id/hardware_white_light_txt"
+            app:layout_constraintTop_toTopOf="@id/hardware_white_light_txt"/>
+
+        <ImageView
+            android:id="@+id/iv2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/hardware_add"
+            app:layout_constraintBottom_toBottomOf="@+id/iv1_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv1_2"/>
+
+        <SeekBar
+            android:id="@+id/sb_2"
+            style="@style/jrt_seekbar_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:max="1000"
+            app:layout_constraintBottom_toBottomOf="@+id/iv1_2"
+            app:layout_constraintLeft_toRightOf="@+id/iv1_2"
+            app:layout_constraintRight_toLeftOf="@+id/iv2_2"
+            app:layout_constraintTop_toTopOf="@+id/iv1_2"/>
+
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/hardware_line"
+            android:layout_height="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sb_2"/>
+
+        <!--音量调节-->
+        <com.zhongke.weiduo.mvp.ui.widget.view.SeekBarTopText
+            android:id="@+id/hardware_voice_control_seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"/>
+
+        <TextView
+            android:id="@+id/hardware_split_line"
+            style="@style/hardware_line"
+            android:layout_height="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hardware_voice_control_seek_bar"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/hardware"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/scene_lights"
+            android:drawablePadding="6dp"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="情景灯"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hardware_split_line"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.SwitchView
+            android:id="@+id/switch_scene_lights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv4"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/hardware_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv4"/>
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/hardware_less"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv5"/>
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/hardware_add"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/iv3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv3"/>
+
+        <SeekBar
+            android:id="@+id/sb2"
+            style="@style/jrt_seekbar_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/iv3"
+            app:layout_constraintLeft_toRightOf="@+id/iv3"
+            app:layout_constraintRight_toLeftOf="@+id/iv4"
+            app:layout_constraintTop_toTopOf="@+id/iv3"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            style="@style/hardware_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv5"/>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv6"/>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll1"/>
+
+        <TextView
+            android:id="@+id/tv7"
+            style="@style/hardware_line"
+            android:layout_height="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll2"/>
+
+        <TextView
+            android:id="@+id/tv8"
+            style="@style/hardware"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/projector"
+            android:drawablePadding="6dp"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="触控投影仪"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv7"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.SwitchView
+            android:id="@+id/switch_projector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv8"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv8"/>
+
+        <TextView
+            android:id="@+id/tv21"
+            style="@style/hardware_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv8"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.MySeekBar
+            android:id="@+id/tv9"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv21"
+            openxu:top_text="水平调节"/>
+
+        <TextView
+            android:id="@+id/tv10"
+            style="@style/hardware_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv9"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.MySeekBar
+            android:id="@+id/tv11"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv10"
+            openxu:top_text="垂直调节"/>
+
+        <TextView
+            android:id="@+id/tv20"
+            style="@style/hardware_line"
+            android:layout_height="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv11"/>
+
+        <TextView
+            android:id="@+id/tv_shot_instrument"
+            style="@style/hardware"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/shot_instrument"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/hardware_lock"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="高拍仪"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv20"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.SwitchView
+            android:id="@+id/switch_shot_instrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_shot_instrument"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_shot_instrument"/>
+
+        <TextView
+            android:id="@+id/tv13"
+            style="@style/hardware_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_shot_instrument"/>
+
+        <TextView
+            android:id="@+id/tv_chat_camre"
+            style="@style/hardware"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/chat_camre"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/hardware_unlock"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="聊天摄像头"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv13"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.SwitchView
+            android:id="@+id/switch_chat_camre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_chat_camre"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_chat_camre"/>
+
+        <TextView
+            android:id="@+id/tv15"
+            style="@style/hardware_line"
+            android:layout_height="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_chat_camre"/>
+
+        <TextView
+            android:id="@+id/tv16"
+            style="@style/hardware"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/hardware_host"
+            android:drawablePadding="6dp"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="主机"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv15"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.SwitchView
+            android:id="@+id/switch_hardware_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv16"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv16"/>
+
+        <TextView
+            android:id="@+id/tv17"
+            style="@style/hardware_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv16"/>
+
+        <TextView
+            android:id="@+id/tv18"
+            style="@style/hardware"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/hardware_speaker"
+            android:drawablePadding="6dp"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="音箱"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv17"/>
+
+        <com.zhongke.weiduo.mvp.ui.widget.view.SwitchView
+            android:id="@+id/switch_hardware_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv18"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv18"/>
+
+        <TextView
+            android:id="@+id/tv19"
+            style="@style/hardware_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv18"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

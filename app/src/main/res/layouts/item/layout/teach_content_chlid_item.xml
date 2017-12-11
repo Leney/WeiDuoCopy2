@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_angle"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@+id/tv_angle_value"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/angle"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_angle_value"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@+id/tv_date"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@+id/tv_date_value"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/date"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_date_value"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@+id/iv_delete2"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_delete2"
+            android:layout_width="16.7dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.7dp"
+            android:layout_marginRight="15.7dp"
+            android:src="@drawable/delete_2" />
+    </RelativeLayout>
+</LinearLayout>

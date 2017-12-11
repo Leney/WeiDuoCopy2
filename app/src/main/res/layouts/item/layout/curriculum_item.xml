@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_picture_curriculum"
+        android:layout_width="match_parent"
+        android:layout_height="111.3dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/curriculum_course_kind"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="直播课"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:background="@color/blue_46b8ef"/>
+
+    <TextView
+        android:id="@+id/tv_name_curriculum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_picture_curriculum"
+        android:layout_marginTop="5dp"
+        android:textColor="#323232"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name_curriculum"
+        android:layout_below="@+id/tv_name_curriculum"
+        android:layout_marginTop="4dp"
+        android:text="（第三期）"
+        android:textColor="#323232"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_curriculum_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_stage"
+        android:layout_marginTop="9dp"
+        android:drawableLeft="@drawable/curriculum_date"
+        android:drawablePadding="6.3dp"
+        android:text="12月1日开课"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_curriculum_baoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_curriculum_date"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/curriculum_people"
+        android:drawablePadding="6.3dp"
+        android:text="999人已报名"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</RelativeLayout>

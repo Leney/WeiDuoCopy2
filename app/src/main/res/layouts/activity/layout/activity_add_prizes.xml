@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zhongke.weiduo.mvp.ui.activity.AddPrizesActivity">
+
+    <!--金币积分剩余-->
+    <TextView
+        android:id="@+id/residue_blue_bg"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/blue_effbfe"/>
+
+    <TextView
+        android:id="@+id/residue_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toTopOf="@id/residue_blue_bg"
+        app:layout_constraintBottom_toBottomOf="@id/residue_blue_bg"
+        android:text="@string/residue_gold"/>
+
+    <TextView
+        android:id="@+id/residue_gold_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/red_ef5e52"
+        app:layout_constraintLeft_toRightOf="@id/residue_gold"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toTopOf="@+id/residue_gold"
+        android:text="23"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        app:layout_constraintLeft_toRightOf="@id/residue_gold_number"
+        android:layout_marginStart="3dp"
+        app:layout_constraintTop_toTopOf="@+id/residue_gold_number"
+        android:text=","/>
+
+    <TextView
+        android:id="@+id/residue_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        app:layout_constraintLeft_toRightOf="@id/residue_gold_number"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/residue_blue_bg"
+        app:layout_constraintBottom_toBottomOf="@id/residue_blue_bg"
+        android:text="@string/integral_residue"/>
+
+    <TextView
+        android:id="@+id/residue_integral_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/red_ef5e52"
+        app:layout_constraintLeft_toRightOf="@id/residue_integral"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toTopOf="@+id/residue_integral"
+        android:text="49"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        app:layout_constraintLeft_toRightOf="@id/residue_integral_number"
+        android:layout_marginStart="3dp"
+        app:layout_constraintTop_toTopOf="@+id/residue_integral_number"
+        android:text=","/>
+
+    <TextView
+        android:id="@+id/quick_recharge_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/main_color"
+        app:layout_constraintLeft_toRightOf="@id/residue_integral_number"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/residue_blue_bg"
+        app:layout_constraintBottom_toBottomOf="@id/residue_blue_bg"
+        android:text="@string/recharge_integral"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/main_color"
+        app:layout_constraintLeft_toLeftOf="@id/quick_recharge_integral"
+        app:layout_constraintRight_toRightOf="@id/quick_recharge_integral"
+        app:layout_constraintTop_toBottomOf="@id/quick_recharge_integral"
+        />
+
+    <!--金币-->
+    <TextView
+        android:id="@+id/setting_gold_bg"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/gray4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/residue_blue_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="21dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        android:text="@string/gold"
+        app:layout_constraintLeft_toLeftOf="@id/setting_gold_bg"
+        app:layout_constraintTop_toTopOf="@id/setting_gold_bg"
+        app:layout_constraintBottom_toBottomOf="@id/setting_gold_bg"
+        android:layout_marginStart="11dp"/>
+    
+    <EditText
+        android:id="@+id/setting_input_gold_count"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:background="@null"
+        android:textSize="13sp"
+        android:gravity="end"
+        android:hint="@string/input_gold_count"
+        android:textColorHint="@color/edit_hint_color2"
+        app:layout_constraintRight_toRightOf="@id/setting_gold_bg"
+        app:layout_constraintTop_toTopOf="@id/setting_gold_bg"
+        app:layout_constraintBottom_toBottomOf="@id/setting_gold_bg"
+        android:layout_marginEnd="11dp"/>
+
+    <!--积分-->
+    <TextView
+        android:id="@+id/setting_integral_bg"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/gray4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_gold_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="21dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_text_color"
+        android:text="@string/integral"
+        app:layout_constraintLeft_toLeftOf="@id/setting_integral_bg"
+        app:layout_constraintTop_toTopOf="@id/setting_integral_bg"
+        app:layout_constraintBottom_toBottomOf="@id/setting_integral_bg"
+        android:layout_marginStart="11dp"/>
+
+    <EditText
+        android:id="@+id/setting_input_integral_count"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:background="@null"
+        android:textSize="13sp"
+        android:gravity="end"
+        android:hint="@string/input_integral_count"
+        android:textColorHint="@color/edit_hint_color2"
+        app:layout_constraintRight_toRightOf="@id/setting_integral_bg"
+        app:layout_constraintTop_toTopOf="@id/setting_integral_bg"
+        app:layout_constraintBottom_toBottomOf="@id/setting_integral_bg"
+        android:layout_marginEnd="11dp"/>
+
+    <!--上传礼物提示-->
+    <TextView
+        android:id="@+id/upload_tip_bg"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@color/gray4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_integral_bg"
+        android:layout_marginTop="21dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/upload_gift_pic"
+        android:textColor="@color/gray_text_color"
+        app:layout_constraintLeft_toLeftOf="@id/upload_tip_bg"
+        app:layout_constraintTop_toTopOf="@id/upload_tip_bg"
+        app:layout_constraintBottom_toBottomOf="@id/upload_tip_bg"
+        android:layout_marginStart="11dp"/>
+
+    <TextView
+        android:id="@+id/add_upload_prize_bg"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upload_tip_bg"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/upload_gift_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_prize_fawn_doll"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="22dp"
+        app:layout_constraintTop_toTopOf="@id/add_upload_prize_bg"
+        app:layout_constraintBottom_toBottomOf="@id/add_upload_prize_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doll"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/upload_gift_picture"
+        app:layout_constraintLeft_toLeftOf="@id/upload_gift_picture"
+        app:layout_constraintRight_toRightOf="@id/upload_gift_picture"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/upload_gift_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_prize"
+        app:layout_constraintLeft_toRightOf="@id/upload_gift_picture"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toTopOf="@id/add_upload_prize_bg"
+        app:layout_constraintBottom_toBottomOf="@id/add_upload_prize_bg"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_picture"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/upload_gift_add_button"
+        app:layout_constraintLeft_toLeftOf="@id/upload_gift_add_button"
+        app:layout_constraintRight_toRightOf="@id/upload_gift_add_button"
+        android:layout_marginTop="5dp"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gray4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_upload_prize_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

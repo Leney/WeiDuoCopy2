@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="6.7dp"
+    android:paddingLeft="20.3dp"
+    android:paddingRight="20.3dp"
+    android:paddingTop="9dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/dialog_handle_token_expire_tip_tv"
+        android:layout_width="wrap_content"
+        android:text="温馨提示"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialog_handle_token_expire_content_tv"
+        android:layout_width="wrap_content"
+        android:text="身份信息登录已过期，请重新输入"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_handle_token_expire_tip_tv"
+        android:layout_marginTop="22.7dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialog_handle_token_expire_sure_tv"
+        android:layout_width="wrap_content"
+        android:background="@drawable/shape_dialog_handle_token"
+        android:text="确定"
+        android:textSize="14sp"
+        android:textColor="#fd4f4f"
+        android:layout_marginTop="12dp"
+        android:paddingRight="31dp"
+        android:paddingLeft="31dp"
+        android:paddingBottom="9.3dp"
+        android:paddingTop="9.3dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_handle_token_expire_content_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/dialog_handle_token_expire_content_tv"
+        android:layout_height="wrap_content" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

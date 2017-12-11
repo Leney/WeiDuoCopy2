@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="@dimen/space_36"
+              android:layout_height="@dimen/space_36">
+    <ImageView
+        android:id="@+id/member_icon"
+        android:layout_width="@dimen/space_36"
+        android:layout_height="@dimen/space_36"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_10"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+</LinearLayout>

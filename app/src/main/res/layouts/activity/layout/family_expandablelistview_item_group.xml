@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/family_expandablelistview_group_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1f2f3"
+    android:paddingBottom="@dimen/space_8"
+    android:paddingLeft="@dimen/space_10"
+    android:paddingTop="@dimen/space_9"
+    android:textColor="#999999"
+    android:textSize="@dimen/text_size_14">
+
+
+</TextView>

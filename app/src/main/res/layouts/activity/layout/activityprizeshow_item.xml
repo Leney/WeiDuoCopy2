@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_10">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="爸爸"
+        android:textColor="#ffffff"
+        android:background="@drawable/activityprize_show_name_shape"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_height="wrap_content" />
+      <com.zhongke.weiduo.mvp.ui.widget.WapGridView
+          android:id="@+id/activityprizeshow_item_gridView"
+          android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/space_20"
+          android:numColumns="3"
+          android:stretchMode="columnWidth"
+          android:horizontalSpacing="@dimen/space_30"
+          android:verticalSpacing="@dimen/space_20"
+          android:layout_height="wrap_content">
+
+      </com.zhongke.weiduo.mvp.ui.widget.WapGridView>
+</LinearLayout>

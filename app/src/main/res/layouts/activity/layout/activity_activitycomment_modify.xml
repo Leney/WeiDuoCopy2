@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activitycomment_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:background="@color/white"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_comment_title"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:textSize="16sp"
+            android:textColor="@color/black_text_color"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:text="[2017-9-20 9:30-10:30] 国学经典-论语抢答PK赛"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f0f0f0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text1style_activitycomment"
+                android:layout_centerVertical="true"
+                android:text="核心培养要素评价" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_999999"
+                android:text="查看评价规则"/>
+
+        </RelativeLayout>
+
+        <!--<include layout="@layout/common_comment_ratingbar_layout"></include>-->
+
+        <com.zhongke.weiduo.mvp.ui.widget.ListViewForScrollview
+            android:id="@+id/activity_comment_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.zhongke.weiduo.mvp.ui.widget.ListViewForScrollview>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f0f0f0" />
+
+        <EditText
+            android:id="@+id/activity_comment_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:hint="宝贝表现你觉得怎么样?你的建议,对他的成长有很大意义哟"
+            android:textSize="14sp"
+            android:textColorHint="@color/text_999999"
+            android:gravity="top" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f0f0f0" />
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:layout_marginTop="@dimen/space_17">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textColor="@color/black_text_color"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="活动评价"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="12sp"-->
+                <!--android:textColor="@color/text_999999"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="查看评价规则"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="22dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textColor="@color/text_999999"-->
+                <!--android:text="价值匹配 :" />-->
+
+            <!--<RatingBar-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/customRatingbarStyle"-->
+                <!--android:rating="5"-->
+                <!--android:numStars="5"-->
+                <!--android:layout_marginLeft="@dimen/space_25" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="14sp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:textColor="@color/text_999999"-->
+                <!--android:text="活动体验 :" />-->
+
+            <!--<RatingBar-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/customRatingbarStyle"-->
+                <!--android:rating="5"-->
+                <!--android:numStars="5"-->
+                <!--android:layout_marginLeft="@dimen/space_25" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@null"-->
+            <!--android:layout_margin="@dimen/space_10"-->
+            <!--android:gravity="start"-->
+            <!--android:hint="本次活动满足你的期待吗?说说你的心得,分享给其他家长吧"-->
+            <!--android:minLines="4"-->
+            <!--android:padding="@dimen/space_6"-->
+            <!--android:textColor="#cccccc"-->
+            <!--android:textColorHint="#cccccc"-->
+            <!--android:textSize="@dimen/text_size_14" />-->
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <com.zhongke.weiduo.mvp.ui.widget.layout.TabItemChangeLayout
+        android:id="@+id/event_details_tabitemchanglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhongke.weiduo.mvp.ui.widget.layout.TabItemChangeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f2f2"/>
+    <RelativeLayout
+        android:id="@+id/activitydetails_table_item_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp">
+
+        <TextView
+            android:id="@+id/dialog_go_to_grand_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="评价已发布成功,现在去为宝贝发放奖品吧?"
+            android:textColor="@color/black_text_color"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="16sp"
+            android:layout_marginTop="26dp" />
+
+        <TextView
+            android:id="@+id/dialog_go_to_grand_cancel"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black_text_color"
+            android:text="@string/cancel"
+            android:background="@drawable/shape_management_plan_text"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/dialog_go_to_grand_go"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black_text_color"
+            android:text="去发放"
+            android:layout_toRightOf="@id/dialog_go_to_grand_cancel"
+            android:background="@drawable/shape_management_plan_text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/fl_back"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_me_bg" />
+
+        <ImageView
+            android:id="@id/iv2"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_me_bg" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_personal_album_ll"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/fl_back"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_func_pic" />
+
+        <TextView
+            android:id="@+id/activity_personal_photo_album_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="小红的相册"
+            android:textColor="#767676"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/is_friend_lay"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="#e0000b"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="删除好友"
+            android:textColor="#ffe1e4" />
+
+        <TextView
+            android:id="@+id/send_mes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="#1cbf62"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="发送消息"
+            android:textColor="#ffe1e4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_personal_full_name_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/activity_personal_album_ll">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/full_name"/>
+
+        <TextView
+            android:id="@+id/activity_personal_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="累累"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_personal_nick_name_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/activity_personal_full_name_ll">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/nick_name_2"/>
+
+        <TextView
+            android:id="@+id/activity_personal_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="小hui"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_personal_sex_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/activity_personal_nick_name_ll">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/sex_2"/>
+
+        <TextView
+            android:id="@+id/activity_personal_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="女"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="14dp"
+            android:background="#1cbf62"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/add_friend"
+            android:textColor="#ffe1e4" />
+    </LinearLayout>
+</RelativeLayout>

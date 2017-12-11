@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:src="@drawable/icon_success"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16"
+        android:text="@string/create_family_success"
+        android:textColor="@color/black_text_color"
+        android:textSize="@dimen/dialog_content_size"/>
+
+    <TextView
+        android:id="@+id/create_family_success_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_5"
+        android:text="@string/create_family_code"
+        android:textColor="@color/black_text_color"
+        android:textSize="@dimen/dialog_content_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@color/spline_color"/>
+
+    <!-- 添加家庭成员-->
+    <TextView
+        android:id="@+id/create_family_success_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginTop="@dimen/space_5"
+        android:gravity="center"
+        android:text="@string/add_family_member"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/dialog_title_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:background="@color/spline_color"/>
+
+    <!-- 进入新手任务-->
+    <TextView
+        android:id="@+id/create_family_success_new_task_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginTop="@dimen/space_5"
+        android:gravity="center"
+        android:text="@string/go_to_new_task"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/dialog_title_size"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lab_adapter_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:background="@drawable/lab_btn_selector"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="乐于助人"
+        android:textSize="@dimen/lab_text_size"/>
+</FrameLayout>

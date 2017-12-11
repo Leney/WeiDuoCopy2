@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:paddingBottom="@dimen/space_5"
+              android:paddingTop="@dimen/space_5">
+
+    <View
+        android:layout_width="@dimen/space_4"
+        android:layout_height="@dimen/space_15"
+        android:background="@color/main_color"/>
+    <TextView
+        android:id="@+id/scheme_detail_stage_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="阶段一 但是似懂非懂分"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:textColor="@color/text_333333"
+        android:textSize="@dimen/text_size_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="里程碑"
+        android:layout_marginRight="@dimen/space_10"
+        android:textColor="@color/text_666666"
+        android:textSize="@dimen/text_size_14"/>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/dialog_delete_contact_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black_text_color"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/dialog_delete_contact_title"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="33dp"
+            android:text="删除并退出后，将不再接受此群聊消息"/>
+
+
+        <TextView
+            android:id="@+id/dialog_delete_contact_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="删除"
+            android:textColor="#fd4f4f"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="33dp"/>
+
+        <TextView
+            android:id="@+id/dialog_delete_contact_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="取消"
+            android:layout_toLeftOf="@+id/dialog_delete_contact_delete"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="34dp"/>
+
+</RelativeLayout>

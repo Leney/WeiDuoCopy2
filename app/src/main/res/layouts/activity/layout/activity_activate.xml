@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_view"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:paddingTop="@dimen/space_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_baby_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_btn" />
+            </LinearLayout>
+            <!-- 昵称部分-->
+            <LinearLayout style="@style/activateItemLayStyle">
+
+                <TextView
+                    style="@style/activateItemNameStyle"
+                    android:text="@string/nick_name" />
+
+                <EditText
+                    android:id="@+id/activate_nick_name_input"
+                    style="@style/activateItemValueStyle"
+                    android:hint="@string/input_baby_nick_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <!-- 出生日期部分-->
+            <LinearLayout style="@style/activateItemLayStyle">
+
+                <TextView
+                    style="@style/activateItemNameStyle"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/activate_age_input"
+                    style="@style/activateItemValueStyle"
+                    android:hint="@string/please_choice" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+
+            <!-- 学校名称部分-->
+            <LinearLayout style="@style/activateItemLayStyle">
+
+                <TextView
+                    style="@style/activateItemNameStyle"
+                    android:text="@string/school" />
+
+                <EditText
+                    android:id="@+id/activate_school_input"
+                    style="@style/activateItemValueStyle"
+                    android:hint="@string/input_school_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <!-- 性别部分-->
+            <LinearLayout style="@style/activateItemLayStyle">
+
+                <TextView
+                    style="@style/activateItemNameStyle"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/activate_sex_input"
+                    style="@style/activateItemValueStyle"
+                    android:hint="@string/please_choice" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <!-- 我的角色部分-->
+            <LinearLayout style="@style/activateItemLayStyle">
+
+                <TextView
+                    style="@style/activateItemNameStyle"
+                    android:text="@string/my_role" />
+
+                <TextView
+                    android:id="@+id/activate_my_role_input"
+                    style="@style/activateItemValueStyle"
+                    android:hint="@string/please_choice" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <!-- 我的角色部分-->
+            <LinearLayout style="@style/activateItemLayStyle">
+
+                <TextView
+                    style="@style/activateItemNameStyle"
+                    android:text="我的家庭:" />
+
+                <EditText
+                    android:id="@+id/activate_my_family_input"
+                    style="@style/activateItemValueStyle"
+                    android:hint="请输入" />
+
+            </LinearLayout>
+            <!-- 我的角色部分-->
+            <LinearLayout
+                style="@style/activateItemLayStyle"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    style="@style/activateItemNameStyle"
+                    android:text="@string/baby_lab" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <!-- 放置宝贝标签的部分-->
+            <!--<LinearLayout
+                android:id="@+id/activate_baby_labs_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_20"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_16"/>-->
+
+            <com.zhongke.weiduo.mvp.ui.widget.WapGridView
+                android:id="@+id/activate_baby_labs_lay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:horizontalSpacing="@dimen/space_10"
+                android:numColumns="3"
+                android:paddingBottom="@dimen/space_20"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_6"
+                android:verticalSpacing="@dimen/space_10" />
+
+            <!-- 培养方向部分-->
+            <LinearLayout
+                style="@style/activateItemLayStyle"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    style="@style/activateItemNameStyle"
+                    android:text="@string/target_lab" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line_height"
+                android:background="@color/spline_color" />
+
+            <!-- 放置培养方向标签的部分-->
+            <!--<LinearLayout
+                android:id="@+id/activate_target_labs_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_20"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_16"/>-->
+
+            <com.zhongke.weiduo.mvp.ui.widget.WapGridView
+                android:id="@+id/activate_target_labs_lay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:horizontalSpacing="@dimen/space_10"
+                android:numColumns="3"
+                android:paddingBottom="@dimen/space_20"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_6"
+                android:verticalSpacing="@dimen/space_10" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_55"
+        android:background="@color/edit_lay_bg"
+        android:paddingLeft="@dimen/space_40"
+        android:paddingRight="@dimen/space_40">
+
+        <TextView
+            android:id="@+id/activate_activate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_36"
+            android:layout_gravity="center"
+            android:background="@drawable/activate_btn_shape"
+            android:gravity="center"
+            android:text="@string/activate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical">
+
+    <!-- 手机号码部分-->
+    <LinearLayout
+        style="@style/activateItemLayStyle"
+        android:layout_marginTop="@dimen/space_10">
+
+        <TextView
+            style="@style/activateItemNameStyle"
+            android:text="@string/phone_num"
+            android:textColor="@color/black_text_color"/>
+
+        <EditText
+            android:id="@+id/add_member_phone_input"
+            style="@style/activateItemValueStyle"
+            android:hint="@string/member_phone_num_input"
+            android:inputType="phone"
+            android:maxLength="11"/>
+    </LinearLayout>
+
+    <!-- 亲友称呼部分-->
+    <LinearLayout
+        style="@style/activateItemLayStyle"
+        android:layout_marginTop="@dimen/space_10">
+
+        <TextView
+            style="@style/activateItemNameStyle"
+            android:text="@string/member_role_name"
+            android:textColor="@color/black_text_color"/>
+
+        <EditText
+            android:id="@+id/add_member_role_input"
+            style="@style/activateItemValueStyle"
+            android:hint="@string/member_role_input"
+            android:maxLength="11"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:background="@color/spline_color"/>
+    <!-- 亲友称呼部分-->
+    <LinearLayout
+        style="@style/activateItemLayStyle">
+
+        <TextView
+            style="@style/activateItemNameStyle"
+            android:text="@string/member_spec"
+            android:textColor="@color/black_text_color"/>
+
+        <EditText
+            android:id="@+id/add_member_spec_input"
+            style="@style/activateItemValueStyle"
+            android:hint="@string/member_spec_input"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:background="@color/spline_color2"/>
+    <!-- 底部添加按钮部分-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_55"
+        android:background="@color/edit_lay_bg"
+        android:paddingLeft="@dimen/space_40"
+        android:paddingRight="@dimen/space_40">
+
+        <TextView
+            android:id="@+id/add_member_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_36"
+            android:layout_gravity="center"
+            android:background="@drawable/member_add_btn_shape"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/text_size_16"/>
+    </FrameLayout>
+
+</LinearLayout>

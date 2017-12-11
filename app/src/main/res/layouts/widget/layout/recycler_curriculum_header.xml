@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--广告轮播器-->
+        <com.youth.banner.Banner
+            android:id="@+id/fragment_school_banner"
+            android:layout_width="match_parent"
+            android:layout_height="146.7dp"
+            app:image_scale_type="center_crop"
+            app:indicator_drawable_selected="@drawable/point_bg_enable"
+            app:indicator_drawable_unselected="@drawable/point_bg_normal"
+            app:indicator_height="5dp"
+            app:indicator_margin="6dp"
+            app:indicator_width="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#f1f2f3"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38.3dp">
+
+            <TextView
+                android:id="@+id/view"
+                android:layout_width="3dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.7dp"
+                android:background="#1cbf61"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/view"
+                android:layout_toRightOf="@+id/view"
+                android:paddingLeft="10.7dp"
+                android:text="@string/all_courses"
+                android:textColor="#323232"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <!--直播-->
+    <ImageView
+        android:id="@+id/answer_live_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_180"
+        android:background="@drawable/test_live"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@drawable/answer_content_bg"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/answer_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_25"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:text="李白《下终南山》“长歌吟松风，曲尽河星稀”中，“松风”指的是？"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/text_size_16"/>
+
+        <!-- 倒计时控件-->
+        <com.zhongke.weiduo.mvp.ui.widget.view.CountClock
+            android:id="@+id/answer_count_down_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_15"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@drawable/count_down_clock_bg"
+            android:gravity="center"
+            android:text="00:30"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_14"/>
+
+        <!-- 选项控件-->
+        <com.zhongke.weiduo.mvp.ui.widget.view.OptionsLayout
+            android:id="@+id/answer_options_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:gravity="center_horizontal"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <!-- 参与人员列表-->
+        <com.zhongke.weiduo.mvp.ui.widget.view.PartInLayout
+            android:id="@+id/part_in_list_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_73"/>
+    </LinearLayout>
+</LinearLayout>

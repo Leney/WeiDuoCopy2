@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roles">
+        <item >爸爸</item>
+        <item>妈妈</item>
+        <item>爷爷</item>
+        <item>奶奶</item>
+        <item>叔叔</item>
+        <item>阿姨</item>
+        <item>儿子</item>
+        <item>女儿</item>
+        <item>外公</item>
+        <item>外婆</item>
+    </string-array>
+</resources>

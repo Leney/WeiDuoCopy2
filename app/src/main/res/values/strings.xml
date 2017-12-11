@@ -1,0 +1,427 @@
+<resources>
+    <string name="app_name">微舵</string>
+
+    <string name="tab1">首页</string>
+    <string name="tab2">学堂</string>
+    <string name="tab3">微舵</string>
+    <string name="tab4">发现</string>
+    <string name="tab5">联系人</string>
+
+    <string name="again_sure_exit">再按一次退出程序</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="load_error">加载失败,点击重试</string>
+    <string name="no_net">无网络连接</string>
+    <string name="no_data">暂无数据</string>
+
+    <string name="input_device_code">请输入机器码或邀请码</string>
+    <string name="input_phone">请输入您的手机号码</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="input_new_pwd">新密码(8&#8211;12位数字与字母组合)</string>
+    <string name="get_msg_code">获取验证码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="login_success">登录成功</string>
+
+    <string name="teach_content">教学内容</string>
+    <string name="curriculum">课程</string>
+    <string name="expert">专家</string>
+    <string name="curriculum_details">课程详情</string>
+    <string name="add_teach_content">添加教学内容</string>
+    <string name="register_tips_1">请输入设备编码或邀请码</string>
+    <string name="register_tips_2">请正确输入您的电话号码</string>
+    <string name="register_tips_3">请输入短信验证码</string>
+    <string name="register_tips_4">请输入8&#8211;12位数字与字母组合的新密码</string>
+    <string name="register_tips_5">请输入8&#8211;12位数字与字母组合的密码</string>
+    <string name="registering">正在注册&#8230;</string>
+    <string name="retry_later">S 重新获取</string>
+    <string name="register_des">说明：注册微舵账号账号，即表示您同意用户服务条款与隐私政策</string>
+    <string name="new_register">新用户注册</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="register_success">注册成功</string>
+    <string name="other_login_type">其他登录方式</string>
+    <string name="activate">激活</string>
+    <string name="nick_name">昵称:</string>
+    <string name="age">出生日期:</string>
+    <string name="school">学校名称:</string>
+    <string name="sex">性别:</string>
+    <string name="my_role">我的角色:</string>
+    <string name="baby_lab">宝贝标签:</string>
+    <string name="target_lab">培养方向:</string>
+    <string name="please_choice">请选择</string>
+    <string name="input_baby_nick_name">请输入宝贝姓名/昵称</string>
+    <string name="input_school_name">请输入宝贝学校名称</string>
+    <string name="input_baby_add_lab">请输入要添加的宝贝标签</string>
+    <string name="activate_success">激活设备成功</string>
+    <string name="family_name">家庭名称:</string>
+    <string name="family_name_input">请输入家庭名称</string>
+    <string name="save">保存</string>
+    <string name="create_family">创建家庭</string>
+    <string name="creating">创建中&#8230;</string>
+    <string name="create_family_success">创建家庭圈成功!</string>
+    <string name="create_family_code">您的家庭编码是%s</string>
+    <string name="add_family_member">添加家庭成员</string>
+    <string name="go_to_new_task">进入新手任务</string>
+    <string name="add_members">添加亲友</string>
+    <string name="phone_num">手机号码</string>
+    <string name="member_role_name">亲友称呼</string>
+    <string name="member_spec">亲友专长</string>
+    <string name="member_phone_num_input">请输入亲友手机号码</string>
+    <string name="member_role_input">请输入亲友角色 如:爸爸</string>
+    <string name="member_spec_input">请输入亲友专长 多个用空格隔开</string>
+    <string name="add">添加</string>
+    <string name="tips_1">请输入亲友称呼</string>
+    <string name="tips_2">请输入亲友专长</string>
+    <string name="add_family">添加家庭</string>
+    <string name="family_name_or_code">家庭名称/家庭编码</string>
+    <string name="friend_name_or_code">好友名称/好友编码</string>
+    <string name="hot_classify">热门分类</string>
+    <string name="get_nearby_family_failed">获取附近家庭失败</string>
+    <string name="nearby_family">附近的家庭</string>
+    <string name="man">男</string>
+    <string name="madam">女</string>
+    <string name="add_family_to_friend">加为友好家庭</string>
+    <string name="create_group_chat">创建群聊</string>
+    <string name="notes">注意事项</string>
+    <string name="step_content">步骤内容</string>
+    <string name="prompt_mutually">提示与交互</string>
+    <string name="monitoring_record">监控与记录</string>
+    <string name="assess_tips">考核要素</string>
+    <string name="add_assess_tips">添加考核要素</string>
+    <string name="award_punishment">奖励与惩罚</string>
+    <string name="add_prize">添加奖品</string>
+    <string name="opened">已开启</string>
+    <string name="closed">已关闭</string>
+    <string name="join_members">参与人员</string>
+    <string name="target_num">目标人数</string>
+    <string name="cur_join_num">已参与列表</string>
+    <string name="invite_friend">邀请好友</string>
+    <string name="people">人</string>
+    <string name="money_prepare">资金筹备</string>
+    <string name="duty_person">责任人</string>
+    <string name="money_detail">费用明细</string>
+    <string name="remind">提醒</string>
+    <string name="set_duty_people">/设定责任人</string>
+    <string name="yuan">元</string>
+    <string name="tool_list">用具清单</string>
+    <string name="playback_device">播放设备</string>
+    <string name="playback_date">播放时间</string>
+    <string name="playback_angle">设备角度设置</string>
+    <string name="comment">评论</string>
+    <string name="invite_family">邀请家庭</string>
+    <string name="please_select">请选择</string>
+    <string name="activity_comments">活动评论</string>
+    <string name="activity_result">活动成果</string>
+    <string name="activity_progress">活动流程</string>
+    <string name="reward_set">奖励设置</string>
+    <string name="date">时间：</string>
+    <string name="angle">角度：</string>
+    <string name="level">水平</string>
+    <string name="vertical">垂直</string>
+    <string name="recommended_courses">推荐课程</string>
+    <string name="all_courses">全部课程</string>
+    <!--附言界面-->
+    <string name="postscript_tip">你需要发送验证申请，等对方通过</string>
+    <string name="disallow_it_see_my_circle">不让他(她)看我的朋友圈</string>
+    <string name="send">发送</string>
+    <string name="rquest_sent_success">请求已发送</string>
+    <string name="rquest_sent_fail">请求发送失败</string>
+    <string name="message">消息</string>
+
+    <string name="new_friend_2">新朋友</string>
+
+    <!--我-->
+    <string name="my_chat_account">微信号:%1$s</string>
+    <string name="album">相册</string>
+    <string name="collection">收藏</string>
+    <string name="wallet">钱包</string>
+    <string name="card_package">卡包</string>
+    <string name="emotion">表情</string>
+    <string name="setting">设置</string>
+    <string name="qr_code_card_tip">扫一扫上面的二维码图案，加我微信</string>
+
+    <!--会话界面-->
+    <string name="please_to_talk">按住 说话</string>
+    <string name="shot">拍摄</string>
+    <string name="location">看直播</string>
+    <string name="red_pack">开启直播</string>
+    <string name="wx_red_pack">微信红包</string>
+    <string name="file_out_of_date">文件已过期</string>
+    <string name="SET_TEXT_TYPING_TITLE">对方正在输入</string>
+    <string name="SET_VOICE_TYPING_TITLE">对方正在讲话</string>
+    <string name="no_camera_permission">没有权限使用摄像头，请开启摄像头权限</string>
+    <string name="no_record_audio_permission">没有权限使用录音，请开启录音权限</string>
+    <string name="no_read_phone_state_permission">没有读取用户数据的权限，请开启该权限</string>
+    <string name="no_write_external_storage_permission">没有文件写权限，请开启该权限</string>
+    <string name="no_read_external_storage_permission">没有文件读权限，请开启该权限</string>
+
+    <string name="voice_rec">手指上滑，取消发送</string>
+    <string name="voice_cancel">松开手指，取消发送</string>
+    <string name="voice_short">录音时间太短</string>
+    <string name="voice_failure">录音失败！</string>
+    <string name="send_audio_fail">发送语音失败，文件长度为0或语音权限没有开启</string>
+
+    <string name="title_dialog">提示</string>
+    <string name="message_permission_failed">我们需要的一些必要权限被禁止，请授权给我们。</string>
+    <string name="ok">好的</string>
+    <string name="no">就不</string>
+
+    <string name="remove_group_before_str">将</string>
+    <string name="remove_group_after_str">移出了群组</string>
+    <string name="created_group">%1$s创建了群组</string>
+    <string name="invitation">%1$s邀请%2$s加入了群组</string>
+    <string name="remove_group_member">%1$s将%2$s移出了群组</string>
+    <string name="remove_self">%1$s被%2$s移出了群组</string>
+    <string name="change_group_name">%1$s修改群名称为%2$s</string>
+    <string name="you">你</string>
+    <string name="other_party">对方</string>
+    <string name="divided_string">、</string>
+    <string name="group_notification_summary">[群组通知]</string>
+    <string name="quit_groups">退出了群组</string>
+    <string name="dismiss_groups">解散了群组</string>
+    <string name="join_group">加入了群组</string>
+
+    <string name="copy">复制</string>
+    <string name="send_to_friend">发送给朋友</string>
+    <string name="recall">撤回</string>
+
+    <string name="recall_success">撤回成功</string>
+    <string name="recall_fail">撤回失败</string>
+    <string name="recall_one_message">%1$s撤回了一条消息</string>
+
+    <!--最近会话-->
+    <string name="draft">[草稿]</string>
+    <string name="no_support_msg_type">不支持的消息类型</string>
+
+    <!--新的朋友-->
+    <string name="new_friend">新的朋友</string>
+    <string name="no_recommend_friend">还没有推荐的朋友</string>
+    <string name="no_recommend_friend_tip">你可以绑定手机/QQ账号，以便找到更多好友</string>
+    <string name="add_phone_contact">添加手机联系人</string>
+    <string name="wechat_qq_phone">微信号/QQ号/手机号</string>
+    <string name="agree_friend_fail">同意添加好友失败</string>
+    <string name="share">分享</string>
+    <string name="gold_residue">金币剩余</string>
+    <string name="integral_residue">积分剩余</string>
+    <string name="quick_recharge">快速充值挣积分~~~</string>
+    <string name="reward_object">奖励对象</string>
+    <string name="reward_personnel">请选择奖励人员</string>
+    <string name="continue_add">继续添加</string>
+    <string name="submit">提交</string>
+    <string name="reward_standard">奖励标准</string>
+    <string name="gold">金币</string>
+    <string name="please_gold">请输入金币数量</string>
+    <string name="integral">积分</string>
+    <string name="please_integral">请输入积分数量</string>
+    <string name="gift">礼物</string>
+    <string name="gifts_have_selected">已选择礼物</string>
+    <string name="select_from_system">从系统中选择</string>
+    <string name="replace">换一换</string>
+    <string name="upload_pictures">上传礼物图片</string>
+    <string name="click_add">点击添加</string>
+    <string name="reward_setting">奖励设置</string>
+    <string name="check_collection">已收藏</string>
+    <string name="course_info">课程信息</string>
+    <string name="teacher_info">讲师介绍</string>
+    <string name="add_course">加入课程</string>
+    <string name="already_joined">已经加入</string>
+    <string name="good_percent">好评</string>
+    <string name="sign_up">人已报名</string>
+    <string name="play_time">次播放</string>
+    <string name="minutes">分钟</string>
+    <string name="format_total_num">共&#160;%s&#160;节课</string>
+    <string name="ask_teacher">咨询专家</string>
+    <string name="detail">详情</string>
+    <string name="correlation_recommend">相关推荐</string>
+    <string name="correlation_recommend_for_target">配套规划案推荐</string>
+    <string name="correlation_recommend_for_scheme">配套计划案推荐</string>
+    <string name="correlation_recommend_for_plan">配套活动推荐</string>
+    <string name="free">免费</string>
+    <string name="format_price">￥%s</string>
+    <string name="format_use_count">%s人使用</string>
+    <string name="format_user_count">%s人</string>
+    <string name="scheme_detail">规划详情</string>
+    <string name="target_detail">目标详情</string>
+    <string name="plan_detail">计划详情</string>
+    <string name="scheme_project">规划方案</string>
+    <string name="plan_project">计划方案</string>
+    <string name="active_project">活动推荐</string>
+    <string name="active_detail">活动详情</string>
+    <string name="target">目标</string>
+    <string name="plan">计划</string>
+    <string name="act">活动</string>
+    <string name="scheme">规划</string>
+    <string name="mine">我的</string>
+    <string name="recommend_for_you">为您优选</string>
+    <string name="system_title">素质教育体系</string>
+    <string name="system">体系</string>
+    <string name="hapilo_location">Hapilo支持区域</string>
+    <string name="format_execute_item">执行时间：%s天</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="recommend">推荐</string>
+    <string name="format_data">时间:&#160;&#160;%s</string>
+    <string name="format_address">地址:&#160;&#160;%s</string>
+    <string name="my_family">家庭</string>
+    <string name="my_group">群组</string>
+
+    <!-- bilibili -->
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+    <string name="N_A">N/A</string>
+    <string name="close">Close</string>
+    <string name="exit">Exit</string>
+    <string name="sample">Sample</string>
+    <string name="recent">Recent</string>
+    <string name="settings">Settings</string>
+    <string name="tracks">Tracks</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_render">Render</string>
+    <string name="toggle_ratio">Scale</string>
+
+    <string name="media_information">Media Information</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi__selected_audio_track">*</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+    <!--收藏界面-->
+    <string name="first_title">春季食谱,教你如何培养出优秀抵抗力的孩子</string>
+    <string name="first_author">林婷</string>
+    <string name="first_time">一天前</string>
+    <!--日程界面-->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <!--添加日程界面-->
+    <string name="content">内容</string>
+    <string name="begin_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="cycle">周期</string>
+    <string name="date_2017_08_08">2017.08.08</string>
+    <string name="time_23_30">23:30</string>
+    <string name="time_11_30">11:30</string>
+    <string name="everyday">每 天</string>
+    <string name="everyday_once">每天一次</string>
+    <string name="type">类型</string>
+    <string name="on_line">线上</string>
+    <string name="out_line">线下</string>
+    <string name="qin_zi">亲子</string>
+    <string name="remind_2">提醒</string>
+    <string name="one_day">一 天</string>
+    <string name="two_day">二 天</string>
+    <string name="three_day">三 天</string>
+    <string name="seven_day">七 天</string>
+    <string name="fifteen_day">十五天</string>
+    <string name="thirty_day">三十天</string>
+
+    <!--个人资料页面-->
+    <string name="user_profile_picture">用户头像</string>
+    <string name="user_nickname">用户昵称</string>
+    <string name="phone_number">手机号码</string>
+    <string name="number_15988889999">159 8888 9999</string>
+    <string name="actual_name">真实姓名</string>
+    <string name="gender">性别</string>
+    <string name="gril">女</string>
+    <string name="date_of_birth">出生日期</string>
+    <string name="date_2015_10_18">2015-10-18</string>
+    <string name="home_address">家庭地址</string>
+    <!--选择头像弹框-->
+    <string name="take_photo">拍照</string>
+    <string name="choose_from_album">从相册选择</string>
+    <!--群组页面-->
+    <string name="control">爱管制</string>
+    <string name="education">爱教育</string>
+    <string name="conversation">爱交流</string>
+    <string name="group_location">深圳市宝安区中央大道F座</string>
+    <string name="people_count">共45人</string>
+    <string name="introduce">群介绍</string>
+    <string name="group_detail">本群创建于2017年10月1日\n欢迎各位宝爸宝妈加入本群,我们每周举办一次教育交流活动或者宝贝集体活动,欢迎大家踊跃报名参加!!</string>
+    <string name="join_apply">申请加群</string>
+
+    <string name="activity_data">活动资料</string>
+    <string name="activity_time">活动时间: </string>
+    <string name="activity_time_detail_1">2017.9.10</string>
+    <string name="activity_time_detail_2">上午10:00</string>
+    <string name="activity_place">活动地点: </string>
+    <string name="activity_place_detail">Hapilo支持区域</string>
+    <string name="activity_object">活动对象: </string>
+    <string name="activity_object_detail">6-12岁亲自家庭(父母要观战哟) </string>
+    <string name="activity_count">活动人数: </string>
+    <string name="activity_count_detail">8-15人</string>
+    <string name="hardwave_support">硬件支持: </string>
+    <string name="hardwave_support_detail">Hapilo</string>
+    <string name="the_first">第一名</string>
+    <string name="integral_100">100积分</string>
+    <string name="purple_medal">紫光勋章</string>
+    <string name="the_second">第二名</string>
+    <string name="integral_80">80积分</string>
+    <string name="country_medal">国光勋章</string>
+    <string name="the_third">第三名</string>
+    <string name="integral_50">50积分</string>
+    <string name="blue_medal">蓝光勋章</string>
+    <string name="li_zi_lin">李梓琳</string>
+    <string name="yao_qing_hao_you">邀请好友</string>
+    <!--修改密码-->
+    <string name="hint_input_authentication">请输入验证码</string>
+    <string name="get_authentication">获取验证码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="password_tips_8_to_12">提示:(8-12位数字与字母组合)</string>
+    <string name="confirm_new_password">请确认新密码</string>
+    <string name="confirm">提交</string>
+    <!--添加奖品-->
+    <string name="residue_gold">金币剩余</string>
+    <string name="recharge_integral">快速充值挣积分～</string>
+    <string name="input_gold_count">请输入金币数量</string>
+    <string name="input_integral_count">请输入积分数量</string>
+    <string name="upload_gift_pic">上传礼物图片</string>
+    <string name="doll">布偶公仔</string>
+    <string name="add_picture">添加图片</string>
+    <string name="introduce_text">微教育成长体系致力于素质教育培养，用科学的、规范的方法，为孩子的成长保驾护航，点击查看更多详情>></string>
+
+    <string name="management_plan_title">是否现在开始去做管理规划?</string>
+    <string name="exit_group_title">删除并且退出后,将不再接受此群聊信息</string>
+    <!--验证信息-->
+    <string name="you_need_send">你需要发送验证申请给对方</string>
+    <string name="i_am">我是&#8230;</string>
+    <string name="set_note_tip">设置他 (她) 的备注名字</string>
+
+    <string name="full_name">姓名</string>
+    <string name="nick_name_2">昵称</string>
+    <string name="sex_2">性别</string>
+    <string name="remind_comment_content">宝贝已经完成活动了，好想快点得到你的鼓励，去评价他吧~~~~~~</string>
+</resources>
